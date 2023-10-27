@@ -1,10 +1,18 @@
 import DefaultButton from '@/components/DefaultButton';
-import { Box, Center, Heading, Link, Stack, VStack, useMediaQuery } from '@chakra-ui/react';
+import {
+  Box,
+  Center,
+  Heading,
+  Link,
+  Stack,
+  VStack,
+  useMediaQuery,
+} from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 import NextImage, { StaticImageData } from 'next/image';
 import React from 'react';
 import programmers from '../assets/loga/4programmers.svg';
-import asi from '../assets/loga/logo-asi.png';
+import asi from '../assets/loga/asi-logo-trans.svg';
 import hswro from '../assets/loga/logo-hs.svg';
 import linuxMagazine from '../assets/loga/logo-linux-mg.png';
 import mb from '../assets/loga/logo-mb.svg';
@@ -30,11 +38,18 @@ const Sponsorship = () => {
 
   const sponsorsAndOrganizations = [
     {
-      title: t('sponsors'),
+      title: t('organizers'),
       logos: [
-        { image: antmicro, href: 'https://antmicro.com/', width: '350' },
-        { image: mb, href: 'https://www.masterborn.com/', width: '350' },
+        { image: asi, href: 'https://www.asi.wroclaw.pl/', width: '1000' },
       ],
+    },
+    {
+      title: t('sponsors'),
+      logos: [],
+    },
+    {
+      title: t('honorary-patrons'),
+      logos: [{ image: pwr, href: 'https://pwr.edu.pl/', width: '800' }],
     },
     {
       title: t('patrons'),
@@ -56,13 +71,6 @@ const Sponsorship = () => {
           width: '200',
         },
         { image: plug, href: 'https://linux.org.pl/', width: '220' },
-      ],
-    },
-    {
-      title: t('organizers'),
-      logos: [
-        { image: asi, href: 'https://www.asi.wroclaw.pl/', width: '300' },
-        { image: pwr, href: 'https://pwr.edu.pl/', width: '300' },
       ],
     },
   ] as SponsorshipEntity[];
