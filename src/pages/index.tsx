@@ -19,7 +19,7 @@ const Main = () => {
       <NavBar />
       <HeadSlice />
       <AboutUs />
-      <Speakers speakersData={SPEAKERS} />
+      {config.SHOW_SPEAKERS && <Speakers speakersData={SPEAKERS} />}
       {config.SHOW_AGENDA && <Agenda />}
       <PreviousEdition />
       <Map />
