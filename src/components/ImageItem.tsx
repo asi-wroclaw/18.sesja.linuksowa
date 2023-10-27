@@ -1,4 +1,4 @@
-import { Text, VStack, Heading } from '@chakra-ui/react';
+import { Heading, Text, VStack } from '@chakra-ui/react';
 import Image, { StaticImageData } from 'next/image';
 
 type ImageItemProps = {

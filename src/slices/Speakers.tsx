@@ -1,29 +1,29 @@
 import {
-  DarkMode,
-  Text,
-  Flex,
-  Heading,
-  HStack,
-  VStack,
   Box,
-  useDisclosure,
-  ModalContent,
-  Modal,
-  ModalOverlay,
-  ModalHeader,
-  ModalBody,
-  ModalFooter,
   Button,
+  DarkMode,
+  Flex,
+  HStack,
+  Heading,
+  Modal,
+  ModalBody,
   ModalCloseButton,
+  ModalContent,
+  ModalFooter,
+  ModalHeader,
+  ModalOverlay,
+  Text,
+  VStack,
+  useDisclosure,
+  useMediaQuery,
+  useTheme,
 } from '@chakra-ui/react';
+import { useTranslation } from 'next-export-i18n';
 import Image, { StaticImageData } from 'next/image';
 import github from '../assets/socials/github.svg';
-import twitter from '../assets/socials/twitter.svg';
 import linkedin from '../assets/socials/linkedin.svg';
+import twitter from '../assets/socials/twitter.svg';
 import website from '../assets/socials/website.svg';
-import { useTheme } from '@chakra-ui/react';
-import { useTranslation } from 'next-export-i18n';
-import { useMediaQuery } from '@chakra-ui/react';
 
 type SocialUrls = {
   website: string;

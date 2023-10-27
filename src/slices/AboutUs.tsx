@@ -1,10 +1,9 @@
-import { Box, Stack } from '@chakra-ui/react';
+import ImageItem from '@/components/ImageItem';
+import { Box, Stack, useTheme } from '@chakra-ui/react';
+import { useTranslation } from 'next-export-i18n';
 import cel from '../assets/aboutUs/cel.png';
 import coTo from '../assets/aboutUs/coTo.png';
 import lupa from '../assets/aboutUs/lupa.svg';
-import { useTheme } from '@chakra-ui/react';
-import ImageItem from '@/components/ImageItem';
-import { useTranslation } from 'next-export-i18n';
 
 const AboutUs = () => {
   const theme = useTheme();

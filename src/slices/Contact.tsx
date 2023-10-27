@@ -1,16 +1,16 @@
+import DefaultButton from '@/components/DefaultButton';
 import {
+  Alert,
+  AlertIcon,
+  Box,
   FormControl,
   FormLabel,
+  Heading,
   Input,
   Textarea,
-  Box,
-  Heading,
-  AlertIcon,
-  Alert,
 } from '@chakra-ui/react';
-import DefaultButton from '@/components/DefaultButton';
-import { FormEvent, useState } from 'react';
 import { useTranslation } from 'next-export-i18n';
+import { FormEvent, useState } from 'react';
 
 const Contact = ({ sendMessageUrl }: { sendMessageUrl: string }) => {
   const [name, setName] = useState<string | undefined>(undefined);

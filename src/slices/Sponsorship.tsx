@@ -1,18 +1,17 @@
 import DefaultButton from '@/components/DefaultButton';
-import { Box, VStack, Center, Link, Heading, Stack } from '@chakra-ui/react';
+import { Box, Center, Heading, Link, Stack, VStack, useMediaQuery } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
-import asi from '../assets/loga/logo-asi.png';
-import antmicro from '../assets/loga/logo_antmicro.svg';
-import mb from '../assets/loga/logo-mb.svg';
-import pwr from '../assets/loga/logo-pwr.png';
 import NextImage, { StaticImageData } from 'next/image';
-import hswro from '../assets/loga/logo-hs.svg';
-import programistamag from '../assets/loga/logo-programistamag.jpg';
-import programmers from '../assets/loga/4programmers.svg';
-import linuxMagazine from '../assets/loga/logo-linux-mg.png';
-import plug from '../assets/loga/plug.png';
-import { useMediaQuery } from '@chakra-ui/react';
 import React from 'react';
+import programmers from '../assets/loga/4programmers.svg';
+import asi from '../assets/loga/logo-asi.png';
+import hswro from '../assets/loga/logo-hs.svg';
+import linuxMagazine from '../assets/loga/logo-linux-mg.png';
+import mb from '../assets/loga/logo-mb.svg';
+import programistamag from '../assets/loga/logo-programistamag.jpg';
+import pwr from '../assets/loga/logo-pwr.png';
+import antmicro from '../assets/loga/logo_antmicro.svg';
+import plug from '../assets/loga/plug.png';
 
 type SponsorshipEntity = {
   title: string;
@@ -116,7 +115,7 @@ const Sponsorship = () => {
           </Heading>
           <Link
             _hover={{ textDecorationLine: 'none' }}
-            href="/17-sesja-oferta-sponsorska.pdf"
+            href="/18-sesja-oferta-sponsorska.pdf"
             target="_blank"
           >
             <DefaultButton

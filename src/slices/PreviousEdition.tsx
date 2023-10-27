@@ -1,13 +1,12 @@
 import DefaultButton from '@/components/DefaultButton';
 import {
-  useTheme,
+  AspectRatio,
   Box,
   Center,
   Flex,
-  VStack,
   Heading,
   Link,
-  AspectRatio,
+  VStack
 } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 

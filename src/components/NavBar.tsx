@@ -1,27 +1,27 @@
+import Lang from '@/components/Lang';
+import scrollToSection from '@/utils/scrollToSection';
+import { HamburgerIcon } from '@chakra-ui/icons';
 import {
-  DarkMode,
   Box,
-  StyleProps,
+  DarkMode,
   Flex,
-  Text,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
   IconButton,
   LightMode,
   Link,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuList,
+  StyleProps,
+  Text,
+  useMediaQuery,
+  useTheme,
 } from '@chakra-ui/react';
-import { useState, useEffect } from 'react';
-import { HamburgerIcon } from '@chakra-ui/icons';
-import Image from 'next/image';
-import logo from '../assets/logo-duze-pl.webp';
-import { useTheme } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
-import Lang from '@/components/Lang';
+import Image from 'next/image';
+import { useEffect, useState } from 'react';
+import logo from '../assets/logo-duze-pl.webp';
 import config from '../config';
-import scrollToSection from '@/utils/scrollToSection';
-import { useMediaQuery } from '@chakra-ui/react';
 import DefaultButton from './DefaultButton';
 
 export const HEADER_HEIGHT = 60;

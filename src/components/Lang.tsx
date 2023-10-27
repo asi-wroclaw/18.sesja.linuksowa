@@ -1,6 +1,5 @@
-import { Box, Text } from '@chakra-ui/react';
+import { Box, Text, useTheme } from '@chakra-ui/react';
 import { LanguageSwitcher } from 'next-export-i18n';
-import { useTheme } from '@chakra-ui/react';
 
 const LangItem = ({
   text,

@@ -1,15 +1,15 @@
-import Head from 'next/head';
-import HeadSlice from '../slices/HeadSlice';
-import AboutUs from '../slices/AboutUs';
-import config from '../config';
-import Agenda from '../slices/agenda/Index';
-import PreviousEdition from '@/slices/PreviousEdition';
-import Contact from '@/slices/Contact';
-import Map from '../slices/Map';
-import Sponsorship from '../slices/Sponsorship';
-import Speakers from '../slices/Speakers';
-import { SPEAKERS } from '../assets/speakers/speakersData';
 import NavBar from '@/components/NavBar';
+import Contact from '@/slices/Contact';
+import PreviousEdition from '@/slices/PreviousEdition';
+import Head from 'next/head';
+import { SPEAKERS } from '../assets/speakers/speakersData';
+import config from '../config';
+import AboutUs from '../slices/AboutUs';
+import HeadSlice from '../slices/HeadSlice';
+import Map from '../slices/Map';
+import Speakers from '../slices/Speakers';
+import Sponsorship from '../slices/Sponsorship';
+import Agenda from '../slices/agenda/Index';
 
 import ParticlesBackground from '@/components/ParticlesBackground';
 
@@ -36,15 +36,15 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>17. Sesja Linuksowa</title>
-        <meta name="description" content="17. Sesja Linuksowa" />
-        <meta content="17. Sesja Linuksowa" property="og:site_name"></meta>
+        <title>18. Sesja Linuksowa</title>
+        <meta name="description" content="18. Sesja Linuksowa" />
+        <meta content="18. Sesja Linuksowa" property="og:site_name"></meta>
         <meta content="pl_PL" property="og:locale"></meta>
         <meta
-          content="17. Sesja Linuksowa | Wrocław, Polska"
+          content="18. Sesja Linuksowa | Wrocław, Polska"
           property="og:title"
         ></meta>
-        <meta content="http://17.sesja.linuksowa.pl/" property="og:url"></meta>
+        <meta content="http://18.sesja.linuksowa.pl/" property="og:url"></meta>
         <meta
           content="Sesja Linuksowa to największa w Polsce konferencja poświęcona rozwiązaniom Open Source oraz najnowszym trendom w systemach z rodziny GNU/Linux."
           property="og:description"

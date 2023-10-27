@@ -1,5 +1,4 @@
-import { Box, Text } from '@chakra-ui/react';
-import { useTheme } from '@chakra-ui/react';
+import { Box, Text, useTheme } from '@chakra-ui/react';
 
 export interface DayOptionProps {
   selected?: boolean;

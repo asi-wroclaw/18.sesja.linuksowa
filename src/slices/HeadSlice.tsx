@@ -1,12 +1,10 @@
-import { Box, StyleProps } from '@chakra-ui/react';
+import DefaultButton from '@/components/DefaultButton';
+import scrollToSection from '@/utils/scrollToSection';
+import { Box, Heading, Stack, StyleProps, VStack, useTheme } from '@chakra-ui/react';
+import { useTranslation } from 'next-export-i18n';
 import Image from 'next/image';
 import pinguin from '../assets/pinguin.svg';
-import { Stack, VStack, Heading } from '@chakra-ui/react';
-import { useTheme } from '@chakra-ui/react';
-import DefaultButton from '@/components/DefaultButton';
 import config from '../config';
-import { useTranslation } from 'next-export-i18n';
-import scrollToSection from '@/utils/scrollToSection';
 
 const HeadContainerStyle: StyleProps = {
   height: 'max(100vh,700px)',
