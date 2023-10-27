@@ -10,6 +10,10 @@
     "lint": "next lint",
     "format": "prettier --write src"
   },
+  "volta": {
+    "node": "20.9.0",
+    "npm": "10.2.1"
+  },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.17",
     "@chakra-ui/react": "2.4.9",
