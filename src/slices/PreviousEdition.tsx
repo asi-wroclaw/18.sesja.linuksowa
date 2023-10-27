@@ -1,4 +1,4 @@
-import DefaultButton from "@/components/DefaultButton";
+import DefaultButton from '@/components/DefaultButton';
 import {
   useTheme,
   Box,
@@ -8,17 +8,17 @@ import {
   Heading,
   Link,
   AspectRatio,
-} from "@chakra-ui/react";
-import { useTranslation } from "next-export-i18n";
+} from '@chakra-ui/react';
+import { useTranslation } from 'next-export-i18n';
 
 const PreviousEdition = () => {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation('common');
   const content = {
-    text: t("seeLastEdition"),
-    buttonText: t("goToRecordings"),
-    youtubeUrl: t("ytPlaylist"),
-    youtubeIframeTitle: t("youtubeIframeTitle"),
-    previousEditionUrl: t("previousEditionUrl"),
+    text: t('seeLastEdition'),
+    buttonText: t('goToRecordings'),
+    youtubeUrl: t('ytPlaylist'),
+    youtubeIframeTitle: t('youtubeIframeTitle'),
+    previousEditionUrl: t('previousEditionUrl'),
   };
 
   return (
@@ -38,27 +38,27 @@ const PreviousEdition = () => {
     >
       <Flex
         width="95%"
-        marginY={{ base: "5%", lg: "auto" }}
-        direction={{ base: "column", lg: "row" }}
+        marginY={{ base: '5%', lg: 'auto' }}
+        direction={{ base: 'column', lg: 'row' }}
         gap="5px"
       >
         <Center flex={1}>
           <VStack spacing="3em">
             <Heading
               as="h2"
-              fontSize={{ base: "4xl", md: "7xl" }}
+              fontSize={{ base: '4xl', md: '7xl' }}
               textAlign="center"
               fontWeight="semibold"
             >
               {content.text}
             </Heading>
             <Link
-              _hover={{ textDecorationLine: "none" }}
+              _hover={{ textDecorationLine: 'none' }}
               href={content.previousEditionUrl}
               target="_blank"
             >
               <DefaultButton
-                _hover={{ color: "black" }}
+                _hover={{ color: 'black' }}
                 text={content.buttonText}
               />
             </Link>

@@ -1,12 +1,12 @@
-import { HStack } from "@chakra-ui/react";
+import { HStack } from '@chakra-ui/react';
 
-import DayOption, { DayOptionProps } from "./DayOption";
+import DayOption, { DayOptionProps } from './DayOption';
 
 const DaySelect = ({ days }: { days: DayOptionProps[] }) => {
   return (
     <HStack
       zIndex="2"
-      width={["95%", "85%", "75%", "65%"]}
+      width={['95%', '85%', '75%', '65%']}
       justifyContent="center"
       gap="5"
     >

@@ -15,15 +15,15 @@ import {
   ModalFooter,
   Button,
   ModalCloseButton,
-} from "@chakra-ui/react";
-import Image, { StaticImageData } from "next/image";
-import github from "../assets/socials/github.svg";
-import twitter from "../assets/socials/twitter.svg";
-import linkedin from "../assets/socials/linkedin.svg";
-import website from "../assets/socials/website.svg";
-import { useTheme } from "@chakra-ui/react";
-import { useTranslation } from "next-export-i18n";
-import { useMediaQuery } from "@chakra-ui/react";
+} from '@chakra-ui/react';
+import Image, { StaticImageData } from 'next/image';
+import github from '../assets/socials/github.svg';
+import twitter from '../assets/socials/twitter.svg';
+import linkedin from '../assets/socials/linkedin.svg';
+import website from '../assets/socials/website.svg';
+import { useTheme } from '@chakra-ui/react';
+import { useTranslation } from 'next-export-i18n';
+import { useMediaQuery } from '@chakra-ui/react';
 
 type SocialUrls = {
   website: string;
@@ -58,7 +58,7 @@ const Socials = ({ name, urls }: { name: string; urls: SocialUrls }) => (
 
 const getImageSize = (
   sizes: number[],
-  maxSizes: number[] = [500, 400]
+  maxSizes: number[] = [500, 400],
 ): number[] => {
   if (sizes.length !== 2) return sizes;
   const [width, height] = sizes;
@@ -86,20 +86,20 @@ const SpeakerModal = ({
   image: string | StaticImageData;
   description?: string[];
 }) => {
-  const { t } = useTranslation("common");
-  const [isSmallerThan800] = useMediaQuery("(max-width: 800px)");
+  const { t } = useTranslation('common');
+  const [isSmallerThan800] = useMediaQuery('(max-width: 800px)');
   const { height, width } = image as { height: number; width: number };
-  const isLongDescription = (description ?? []).join("").length > 500;
+  const isLongDescription = (description ?? []).join('').length > 500;
   const isALotOfContent = isLongDescription && isSmallerThan800;
   const [imageWidth, imageHeight] = getImageSize(
     [width, height],
-    isALotOfContent ? [200, 200] : [500, 400]
+    isALotOfContent ? [200, 200] : [500, 400],
   );
   return (
     <DarkMode>
       <Modal
         isCentered
-        size={{ sm: "full", md: "xl" }}
+        size={{ sm: 'full', md: 'xl' }}
         isOpen={isOpen}
         onClose={onClose}
       >
@@ -114,7 +114,7 @@ const SpeakerModal = ({
                   height={imageHeight}
                   width={imageWidth}
                   alt={`${name} image`}
-                  style={{ objectFit: "cover", objectPosition: "top" }}
+                  style={{ objectFit: 'cover', objectPosition: 'top' }}
                   src={image}
                 />
               </Box>
@@ -127,7 +127,7 @@ const SpeakerModal = ({
           </ModalBody>
           <ModalFooter>
             <Button colorScheme="blue" mr={3} onClick={onClose}>
-              {t("close")}
+              {t('close')}
             </Button>
           </ModalFooter>
         </ModalContent>
@@ -153,7 +153,7 @@ const Speaker = ({ image, urls, name, description }: SpeakerProps) => {
             alt={`${name} image`}
             fill
             sizes="300px"
-            style={{ objectFit: "cover", objectPosition: "top" }}
+            style={{ objectFit: 'cover', objectPosition: 'top' }}
             src={image}
           />
         </Box>
@@ -188,7 +188,7 @@ const Speaker = ({ image, urls, name, description }: SpeakerProps) => {
 
 const Speakers = ({ speakersData }: { speakersData: SpeakerProps[] }) => {
   const theme = useTheme();
-  const { t } = useTranslation("common");
+  const { t } = useTranslation('common');
 
   if (!speakersData.length) return null;
   return (
@@ -207,9 +207,9 @@ const Speakers = ({ speakersData }: { speakersData: SpeakerProps[] }) => {
           alignSelf="flex-start"
           as="h2"
           color="whiteAlpha.900"
-          fontSize={["3xl", "5xl", "7xl"]}
+          fontSize={['3xl', '5xl', '7xl']}
         >
-          {t("menu.speakers")}
+          {t('menu.speakers')}
         </Heading>
       </Box>
       <Flex

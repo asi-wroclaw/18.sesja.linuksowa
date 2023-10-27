@@ -1,30 +1,30 @@
-import { Box, Stack } from "@chakra-ui/react";
-import cel from "../assets/aboutUs/cel.png";
-import coTo from "../assets/aboutUs/coTo.png";
-import lupa from "../assets/aboutUs/lupa.svg";
-import { useTheme } from "@chakra-ui/react";
-import ImageItem from "@/components/ImageItem";
-import { useTranslation } from "next-export-i18n";
+import { Box, Stack } from '@chakra-ui/react';
+import cel from '../assets/aboutUs/cel.png';
+import coTo from '../assets/aboutUs/coTo.png';
+import lupa from '../assets/aboutUs/lupa.svg';
+import { useTheme } from '@chakra-ui/react';
+import ImageItem from '@/components/ImageItem';
+import { useTranslation } from 'next-export-i18n';
 
 const AboutUs = () => {
   const theme = useTheme();
-  const { t } = useTranslation("common");
+  const { t } = useTranslation('common');
 
   const content = [
     {
       image: coTo,
-      text: t("aboutUsWhatIsText"),
-      title: t("aboutUsWhatIsTitle"),
+      text: t('aboutUsWhatIsText'),
+      title: t('aboutUsWhatIsTitle'),
     },
     {
       image: lupa,
-      text: t("howItLooksLiketext"),
-      title: t("howItLooksLikeTitle"),
+      text: t('howItLooksLiketext'),
+      title: t('howItLooksLikeTitle'),
     },
     {
       image: cel,
-      text: t("ourGoalText"),
-      title: t("ourGoalTitle"),
+      text: t('ourGoalText'),
+      title: t('ourGoalTitle'),
     },
   ];
   return (
@@ -42,13 +42,13 @@ const AboutUs = () => {
     >
       <Stack
         width="95%"
-        marginY={{ base: "5%", lg: "auto" }}
+        marginY={{ base: '5%', lg: 'auto' }}
         rowGap="20"
         columnGap="5"
-        marginX={{ base: "2%", md: "20%", lg: "0" }}
+        marginX={{ base: '2%', md: '20%', lg: '0' }}
         justifyContent="space-between"
         alignItems="center"
-        direction={{ base: "column", lg: "row" }}
+        direction={{ base: 'column', lg: 'row' }}
       >
         {content.map(({ image, text, title }) => (
           <ImageItem key={title} title={title} imageSrc={image} text={text} />

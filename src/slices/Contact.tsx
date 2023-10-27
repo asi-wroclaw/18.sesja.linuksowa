@@ -7,24 +7,24 @@ import {
   Heading,
   AlertIcon,
   Alert,
-} from "@chakra-ui/react";
-import DefaultButton from "@/components/DefaultButton";
-import { FormEvent, useState } from "react";
-import { useTranslation } from "next-export-i18n";
+} from '@chakra-ui/react';
+import DefaultButton from '@/components/DefaultButton';
+import { FormEvent, useState } from 'react';
+import { useTranslation } from 'next-export-i18n';
 
 const Contact = ({ sendMessageUrl }: { sendMessageUrl: string }) => {
   const [name, setName] = useState<string | undefined>(undefined);
   const [email, setEmail] = useState<string | undefined>(undefined);
   const [message, setMessage] = useState<string | undefined>(undefined);
-  const [status, setStatus] = useState<"success" | "error" | undefined>(
-    undefined
+  const [status, setStatus] = useState<'success' | 'error' | undefined>(
+    undefined,
   );
-  const { t } = useTranslation("common");
+  const { t } = useTranslation('common');
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const requestOptions = {
-      method: "POST",
+      method: 'POST',
       body: `
 FROM: ${name}
 EMAIL: ${email}
@@ -34,11 +34,11 @@ ${message}
     };
     try {
       const response = await fetch(sendMessageUrl, requestOptions);
-      if (response.status === 200) setStatus("success");
-      else setStatus("error");
+      if (response.status === 200) setStatus('success');
+      else setStatus('error');
     } catch (err) {
       console.log(err);
-      setStatus("error");
+      setStatus('error');
     }
   };
 
@@ -52,21 +52,21 @@ ${message}
       mt="10"
       mb="30"
       width="80%"
-      maxWidth={"800"}
+      maxWidth={'800'}
     >
       <Heading
         as="h2"
         mb="30"
-        fontSize={["3xl", "5xl", "7xl"]}
+        fontSize={['3xl', '5xl', '7xl']}
         textAlign="center"
         fontWeight="semibold"
       >
-        {t("writeToUs")}
+        {t('writeToUs')}
       </Heading>
       <form onSubmit={handleSubmit}>
-        <FormControl display={"flex"} flexDir="column">
+        <FormControl display={'flex'} flexDir="column">
           <FormLabel htmlFor="contact-name" mt={4}>
-            {t("formName")}
+            {t('formName')}
           </FormLabel>
           <Input
             value={name}
@@ -75,7 +75,7 @@ ${message}
             type="text"
           />
           <FormLabel htmlFor="contact-email" mt={4}>
-            {t("email")}
+            {t('email')}
           </FormLabel>
           <Input
             value={email}
@@ -84,7 +84,7 @@ ${message}
             id="contact-email"
           />
           <FormLabel htmlFor="contact-message" mt={4}>
-            {t("message")}
+            {t('message')}
           </FormLabel>
           <Textarea
             required
@@ -92,12 +92,12 @@ ${message}
             onChange={(event) => setMessage(event.target.value)}
             size="lg"
             id="contact-message"
-            placeholder={t("formPlaceholder")}
+            placeholder={t('formPlaceholder')}
           />
           <DefaultButton
             mt={4}
             mb={4}
-            _hover={{ color: "black" }}
+            _hover={{ color: 'black' }}
             size="lg"
             text="send"
             type="submit"
@@ -107,9 +107,9 @@ ${message}
       {status && (
         <Alert status={status}>
           <AlertIcon />
-          {status === "success"
-            ? t("messageSendSuccess")
-            : t("messageSendFailed")}
+          {status === 'success'
+            ? t('messageSendSuccess')
+            : t('messageSendFailed')}
         </Alert>
       )}
     </Box>

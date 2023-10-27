@@ -1,14 +1,14 @@
-import { z } from "zod";
-import getConfig from "next/config";
+import { z } from 'zod';
+import getConfig from 'next/config';
 
 const appConfig = z.object({
   SHOW_AGENDA: z.preprocess(
-    (value) => (value === "true" ? true : false),
-    z.boolean().default(false)
+    (value) => (value === 'true' ? true : false),
+    z.boolean().default(false),
   ),
   SHOW_SPEAKERS: z.preprocess(
-    (value) => (value === "true" ? true : false),
-    z.boolean().default(false)
+    (value) => (value === 'true' ? true : false),
+    z.boolean().default(false),
   ),
   SEND_MESSAGE_URL: z.string().optional(),
 });

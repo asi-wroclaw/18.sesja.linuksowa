@@ -1,8 +1,8 @@
-import { useMemo } from "react";
-import dynamic from "next/dynamic";
-import { Flex, Heading, Box } from "@chakra-ui/react";
-import { useTheme } from "@chakra-ui/react";
-import { useTranslation } from "next-export-i18n";
+import { useMemo } from 'react';
+import dynamic from 'next/dynamic';
+import { Flex, Heading, Box } from '@chakra-ui/react';
+import { useTheme } from '@chakra-ui/react';
+import { useTranslation } from 'next-export-i18n';
 
 const Space = ({ text }: { text?: string }) => {
   const theme = useTheme();
@@ -16,7 +16,7 @@ const Space = ({ text }: { text?: string }) => {
       {text && (
         <Heading
           as="h2"
-          fontSize={["3xl", "5xl", "7xl"]}
+          fontSize={['3xl', '5xl', '7xl']}
           zIndex="2"
           color="whiteAlpha.900"
           textAlign="center"
@@ -31,19 +31,19 @@ const Space = ({ text }: { text?: string }) => {
   );
 };
 const MapSlice = () => {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation('common');
 
   const Map = useMemo(
     () =>
-      dynamic(() => import("../components/Map"), {
+      dynamic(() => import('../components/Map'), {
         loading: () => <p>A map is loading</p>,
         ssr: false,
       }),
-    []
+    [],
   );
   return (
     <Box as="section">
-      <Space text={t("eventLocation")} />
+      <Space text={t('eventLocation')} />
       <Box position="relative" zIndex="2">
         <Map />
       </Box>

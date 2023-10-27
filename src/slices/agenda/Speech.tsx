@@ -6,10 +6,10 @@ import {
   useDisclosure,
   Box,
   Link,
-} from "@chakra-ui/react";
-import { useTheme } from "@chakra-ui/react";
-import DefaultButton from "@/components/DefaultButton";
-import { useTranslation } from "next-export-i18n";
+} from '@chakra-ui/react';
+import { useTheme } from '@chakra-ui/react';
+import DefaultButton from '@/components/DefaultButton';
+import { useTranslation } from 'next-export-i18n';
 
 export type SpeechItem = {
   start: string;
@@ -17,15 +17,15 @@ export type SpeechItem = {
   title: string;
   author?: string;
   description?: string[];
-  lang?: ("en" | "pl")[];
+  lang?: ('en' | 'pl')[];
   recording?: string;
 };
 
 const Speech = ({ speech }: { speech: SpeechItem }) => {
   const { isOpen, onToggle } = useDisclosure();
-  const { t } = useTranslation("common");
+  const { t } = useTranslation('common');
   const { start, end, title, author, description, lang, recording } = speech;
-  const style = description ? { cursor: "pointer" } : {};
+  const style = description ? { cursor: 'pointer' } : {};
   const theme = useTheme();
   return (
     <Grid
@@ -33,19 +33,19 @@ const Speech = ({ speech }: { speech: SpeechItem }) => {
                       "space title b"
                       "space author yt"`}
       gridTemplateColumns={[
-        "85px 1fr auto",
-        "100px 1fr auto",
-        "120px 1fr auto",
-        "170px 1fr auto",
-        "200px 1fr auto",
+        '85px 1fr auto',
+        '100px 1fr auto',
+        '120px 1fr auto',
+        '170px 1fr auto',
+        '200px 1fr auto',
       ]}
-      bg={isOpen ? "blackAlpha.900" : "blackAlpha.700"}
+      bg={isOpen ? 'blackAlpha.900' : 'blackAlpha.700'}
       paddingBottom={3}
       paddingTop={3}
       borderBottom={`0.25rem ${theme.colors.primary} solid`}
     >
       <GridItem area="time" onClick={() => description && onToggle()}>
-        <Text fontSize={["sm", "md", "xl", "2xl"]} color="whiteAlpha.900">
+        <Text fontSize={['sm', 'md', 'xl', '2xl']} color="whiteAlpha.900">
           {start}-{end}
         </Text>
       </GridItem>
@@ -54,16 +54,16 @@ const Speech = ({ speech }: { speech: SpeechItem }) => {
         {...style}
         onClick={() => description && onToggle()}
       >
-        <Text fontSize={["sm", "md", "xl", "2xl"]} color="whiteAlpha.900">
+        <Text fontSize={['sm', 'md', 'xl', '2xl']} color="whiteAlpha.900">
           {title}
           {lang && (
             <Text
-              fontSize={["xs", "sm", "md", "lg"]}
+              fontSize={['xs', 'sm', 'md', 'lg']}
               as="i"
               color="whiteAlpha.700"
             >
-              {" "}
-              [{lang.join("/")}]
+              {' '}
+              [{lang.join('/')}]
             </Text>
           )}
         </Text>
@@ -74,7 +74,7 @@ const Speech = ({ speech }: { speech: SpeechItem }) => {
         {...style}
         onClick={() => description && onToggle()}
       >
-        <Text fontSize={["sm", "md", "xl", "2xl"]} color="whiteAlpha.900">
+        <Text fontSize={['sm', 'md', 'xl', '2xl']} color="whiteAlpha.900">
           {author}
         </Text>
       </GridItem>
@@ -82,15 +82,15 @@ const Speech = ({ speech }: { speech: SpeechItem }) => {
         <GridItem
           onClick={() => description && onToggle()}
           gridArea="b"
-          minWidth={["60px", "60px", "74px", "90px"]}
+          minWidth={['60px', '60px', '74px', '90px']}
           display="flex"
         >
           <DefaultButton
             marginLeft="auto"
             textTransform="uppercase"
-            size={["xs", "xs", "xs", "sm"]}
-            _hover={{ color: "black" }}
-            text={isOpen ? "less" : "more"}
+            size={['xs', 'xs', 'xs', 'sm']}
+            _hover={{ color: 'black' }}
+            text={isOpen ? 'less' : 'more'}
             marginBottom="2px"
           />
         </GridItem>
@@ -98,7 +98,7 @@ const Speech = ({ speech }: { speech: SpeechItem }) => {
       {recording && (
         <GridItem
           gridArea="yt"
-          minWidth={["60px", "60px", "74px", "90px"]}
+          minWidth={['60px', '60px', '74px', '90px']}
           display="flex"
         >
           <Link
@@ -106,21 +106,21 @@ const Speech = ({ speech }: { speech: SpeechItem }) => {
             href={recording}
             target="_blank"
             margin="auto"
-            _hover={{ textDecorationLine: "none" }}
+            _hover={{ textDecorationLine: 'none' }}
           >
             <DefaultButton
               marginTop="2px"
               marginLeft="auto"
               bg={theme.colors.red}
               textTransform="uppercase"
-              size={["xs", "xs", "xs", "sm"]}
-              _hover={{ color: "black" }}
+              size={['xs', 'xs', 'xs', 'sm']}
+              _hover={{ color: 'black' }}
               text="nagranie"
             />
           </Link>
         </GridItem>
       )}
-      <Collapse in={isOpen} animateOpacity style={{ gridColumn: "2/span 3" }}>
+      <Collapse in={isOpen} animateOpacity style={{ gridColumn: '2/span 3' }}>
         <Box
           gridColumn="2"
           p="4px"
@@ -131,7 +131,7 @@ const Speech = ({ speech }: { speech: SpeechItem }) => {
         >
           {description?.map((descriptionText, index) => (
             <Text
-              fontSize={["sm", "sm", "lg", "xl"]}
+              fontSize={['sm', 'sm', 'lg', 'xl']}
               key={`${descriptionText}-${index}`}
               minH="15px"
             >

@@ -1,5 +1,5 @@
-import { MapContainer, Marker, TileLayer } from "react-leaflet";
-import "leaflet/dist/leaflet.css";
+import { MapContainer, Marker, TileLayer } from 'react-leaflet';
+import 'leaflet/dist/leaflet.css';
 
 const Map = () => {
   return (
@@ -8,7 +8,7 @@ const Map = () => {
       center={[51.110424, 17.059968]}
       zoom={14}
       scrollWheelZoom={false}
-      style={{ height: 400, width: "100%" }}
+      style={{ height: 400, width: '100%' }}
     >
       <TileLayer
         //@ts-ignore

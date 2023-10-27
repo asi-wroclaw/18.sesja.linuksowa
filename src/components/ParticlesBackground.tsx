@@ -1,7 +1,7 @@
-import { useCallback } from "react";
-import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
-import { Engine, IOptions, RecursivePartial } from "tsparticles-engine";
+import { useCallback } from 'react';
+import Particles from 'react-tsparticles';
+import { loadFull } from 'tsparticles';
+import { Engine, IOptions, RecursivePartial } from 'tsparticles-engine';
 
 const particlesOptions: RecursivePartial<IOptions> = {
   particles: {
@@ -13,13 +13,13 @@ const particlesOptions: RecursivePartial<IOptions> = {
       },
     },
     color: {
-      value: "#ffffff",
+      value: '#ffffff',
     },
     shape: {
-      type: "circle",
+      type: 'circle',
       stroke: {
         width: 0,
-        color: "#000000",
+        color: '#000000',
       },
       polygon: {
         nb_sides: 5,
@@ -48,17 +48,17 @@ const particlesOptions: RecursivePartial<IOptions> = {
     line_linked: {
       enable: true,
       distance: 150,
-      color: "#ffffff",
+      color: '#ffffff',
       opacity: 0.4,
       width: 1,
     },
     move: {
       enable: true,
       speed: 0.5,
-      direction: "none",
+      direction: 'none',
       random: false,
       straight: false,
-      out_mode: "out",
+      out_mode: 'out',
       bounce: false,
       attract: {
         enable: false,
@@ -68,7 +68,7 @@ const particlesOptions: RecursivePartial<IOptions> = {
     },
   },
   interactivity: {
-    detect_on: "canvas",
+    detect_on: 'canvas',
     events: {
       onhover: {
         enable: false,
@@ -85,7 +85,7 @@ const particlesOptions: RecursivePartial<IOptions> = {
 const ParticlesBackground = () => {
   const particlesInit = useCallback(
     async (engine: Engine) => loadFull(engine),
-    []
+    [],
   );
   return <Particles init={particlesInit} options={particlesOptions} />;
 };

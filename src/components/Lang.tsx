@@ -1,11 +1,11 @@
-import { Box, Text } from "@chakra-ui/react";
-import { LanguageSwitcher } from "next-export-i18n";
-import { useTheme } from "@chakra-ui/react";
+import { Box, Text } from '@chakra-ui/react';
+import { LanguageSwitcher } from 'next-export-i18n';
+import { useTheme } from '@chakra-ui/react';
 
 const LangItem = ({
   text,
   locale,
-  textColor = "whiteAlpha.900",
+  textColor = 'whiteAlpha.900',
 }: {
   textColor?: string;
   text: string;
@@ -26,7 +26,7 @@ const LangItem = ({
   );
 };
 
-const Lang = ({ textColor = "whiteAlpha.900" }: { textColor?: string }) => (
+const Lang = ({ textColor = 'whiteAlpha.900' }: { textColor?: string }) => (
   <Box
     color={textColor}
     zIndex="4"
@@ -37,7 +37,7 @@ const Lang = ({ textColor = "whiteAlpha.900" }: { textColor?: string }) => (
     width="100px"
   >
     <LangItem textColor={textColor} text="PL" locale="pl" />
-    {" | "}
+    {' | '}
     <LangItem textColor={textColor} text="EN" locale="en" />
   </Box>
 );

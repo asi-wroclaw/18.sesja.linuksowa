@@ -1,17 +1,17 @@
-import Head from "next/head";
-import HeadSlice from "../slices/HeadSlice";
-import AboutUs from "../slices/AboutUs";
-import config from "../config";
-import Agenda from "../slices/agenda/Index";
-import PreviousEdition from "@/slices/PreviousEdition";
-import Contact from "@/slices/Contact";
-import Map from "../slices/Map";
-import Sponsorship from "../slices/Sponsorship";
-import Speakers from "../slices/Speakers";
-import { SPEAKERS } from "../assets/speakers/speakersData";
-import NavBar from "@/components/NavBar";
+import Head from 'next/head';
+import HeadSlice from '../slices/HeadSlice';
+import AboutUs from '../slices/AboutUs';
+import config from '../config';
+import Agenda from '../slices/agenda/Index';
+import PreviousEdition from '@/slices/PreviousEdition';
+import Contact from '@/slices/Contact';
+import Map from '../slices/Map';
+import Sponsorship from '../slices/Sponsorship';
+import Speakers from '../slices/Speakers';
+import { SPEAKERS } from '../assets/speakers/speakersData';
+import NavBar from '@/components/NavBar';
 
-import ParticlesBackground from "@/components/ParticlesBackground";
+import ParticlesBackground from '@/components/ParticlesBackground';
 
 const Main = () => {
   return (

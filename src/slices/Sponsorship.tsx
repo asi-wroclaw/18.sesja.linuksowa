@@ -1,18 +1,18 @@
-import DefaultButton from "@/components/DefaultButton";
-import { Box, VStack, Center, Link, Heading, Stack } from "@chakra-ui/react";
-import { useTranslation } from "next-export-i18n";
-import asi from "../assets/loga/logo-asi.png";
-import antmicro from "../assets/loga/logo_antmicro.svg";
-import mb from "../assets/loga/logo-mb.svg";
-import pwr from "../assets/loga/logo-pwr.png";
-import NextImage, { StaticImageData } from "next/image";
-import hswro from "../assets/loga/logo-hs.svg";
-import programistamag from "../assets/loga/logo-programistamag.jpg";
-import programmers from "../assets/loga/4programmers.svg";
-import linuxMagazine from "../assets/loga/logo-linux-mg.png";
-import plug from "../assets/loga/plug.png";
-import { useMediaQuery } from "@chakra-ui/react";
-import React from "react";
+import DefaultButton from '@/components/DefaultButton';
+import { Box, VStack, Center, Link, Heading, Stack } from '@chakra-ui/react';
+import { useTranslation } from 'next-export-i18n';
+import asi from '../assets/loga/logo-asi.png';
+import antmicro from '../assets/loga/logo_antmicro.svg';
+import mb from '../assets/loga/logo-mb.svg';
+import pwr from '../assets/loga/logo-pwr.png';
+import NextImage, { StaticImageData } from 'next/image';
+import hswro from '../assets/loga/logo-hs.svg';
+import programistamag from '../assets/loga/logo-programistamag.jpg';
+import programmers from '../assets/loga/4programmers.svg';
+import linuxMagazine from '../assets/loga/logo-linux-mg.png';
+import plug from '../assets/loga/plug.png';
+import { useMediaQuery } from '@chakra-ui/react';
+import React from 'react';
 
 type SponsorshipEntity = {
   title: string;
@@ -24,46 +24,46 @@ type SponsorshipEntity = {
 };
 
 const Sponsorship = () => {
-  const { t } = useTranslation("common");
-  const title = t("sponsorshipTitle");
-  const description = t("sponsorshipDescription");
-  const [isSmallerThan800] = useMediaQuery("(max-width: 800px)");
+  const { t } = useTranslation('common');
+  const title = t('sponsorshipTitle');
+  const description = t('sponsorshipDescription');
+  const [isSmallerThan800] = useMediaQuery('(max-width: 800px)');
 
   const sponsorsAndOrganizations = [
     {
-      title: t("sponsors"),
+      title: t('sponsors'),
       logos: [
-        { image: antmicro, href: "https://antmicro.com/", width: "350" },
-        { image: mb, href: "https://www.masterborn.com/", width: "350" },
+        { image: antmicro, href: 'https://antmicro.com/', width: '350' },
+        { image: mb, href: 'https://www.masterborn.com/', width: '350' },
       ],
     },
     {
-      title: t("patrons"),
+      title: t('patrons'),
       logos: [
         {
           image: hswro,
-          href: "https://www.hswro.org/",
+          href: 'https://www.hswro.org/',
           width: 200,
         },
         {
           image: programistamag,
-          href: "https://programistamag.pl/",
-          width: "300",
+          href: 'https://programistamag.pl/',
+          width: '300',
         },
-        { image: programmers, href: "https://4programmers.net/", width: "300" },
+        { image: programmers, href: 'https://4programmers.net/', width: '300' },
         {
           image: linuxMagazine,
-          href: "https://linux-magazine.pl/",
-          width: "200",
+          href: 'https://linux-magazine.pl/',
+          width: '200',
         },
-        { image: plug, href: "https://linux.org.pl/", width: "220" },
+        { image: plug, href: 'https://linux.org.pl/', width: '220' },
       ],
     },
     {
-      title: t("organizers"),
+      title: t('organizers'),
       logos: [
-        { image: asi, href: "https://www.asi.wroclaw.pl/", width: "300" },
-        { image: pwr, href: "https://pwr.edu.pl/", width: "300" },
+        { image: asi, href: 'https://www.asi.wroclaw.pl/', width: '300' },
+        { image: pwr, href: 'https://pwr.edu.pl/', width: '300' },
       ],
     },
   ] as SponsorshipEntity[];
@@ -74,7 +74,7 @@ const Sponsorship = () => {
       as="section"
       position="relative"
       width="100%"
-      minHeight={["max(50vh,300px)", "max(40vh,300px)"]}
+      minHeight={['max(50vh,300px)', 'max(40vh,300px)']}
       alignItems="center"
       justifyContent="center"
       margin="0"
@@ -82,17 +82,17 @@ const Sponsorship = () => {
     >
       <Box
         width="100%"
-        height={["max(50vh,300px)", "max(40vh,300px)"]}
+        height={['max(50vh,300px)', 'max(40vh,300px)']}
         position="absolute"
       >
         <NextImage
           src="/bg_oferta.webp"
           alt="sponsorship background"
-          style={{ objectFit: "cover", objectPosition: "center" }}
+          style={{ objectFit: 'cover', objectPosition: 'center' }}
           fill
         />
       </Box>
-      <Center height={["max(50vh,300px)", "max(40vh,300px)"]}>
+      <Center height={['max(50vh,300px)', 'max(40vh,300px)']}>
         <VStack gap={3}>
           <Heading
             zIndex="0"
@@ -100,14 +100,14 @@ const Sponsorship = () => {
             fontWeight="bold"
             as="h2"
             textAlign="center"
-            fontSize={["3xl", "5xl", "7xl"]}
+            fontSize={['3xl', '5xl', '7xl']}
           >
             {title}
           </Heading>
 
           <Heading
             as="h3"
-            fontSize={["md", "2xl"]}
+            fontSize={['md', '2xl']}
             textAlign="center"
             zIndex="0"
             color="whiteAlpha.900"
@@ -115,12 +115,12 @@ const Sponsorship = () => {
             {description}
           </Heading>
           <Link
-            _hover={{ textDecorationLine: "none" }}
+            _hover={{ textDecorationLine: 'none' }}
             href="/17-sesja-oferta-sponsorska.pdf"
             target="_blank"
           >
             <DefaultButton
-              _hover={{ color: "black" }}
+              _hover={{ color: 'black' }}
               text="sponsorshipOffer"
             ></DefaultButton>
           </Link>
@@ -142,7 +142,7 @@ const Sponsorship = () => {
                   fontWeight="bold"
                   as="h2"
                   textAlign="center"
-                  fontSize={["xl", "3xl", "5xl"]}
+                  fontSize={['xl', '3xl', '5xl']}
                 >
                   {title}
                 </Heading>
@@ -152,14 +152,14 @@ const Sponsorship = () => {
                   justifyContent="center"
                   alignItems="center"
                   marginLeft="10%"
-                  rowGap={{ base: "60px" }}
+                  rowGap={{ base: '60px' }}
                   marginRight="10%"
                 >
                   {logos.map(({ image, href, width }) => (
                     <Box
                       key={href}
                       flexWrap="wrap"
-                      flexBasis={{ base: "100%", md: "45%", xl: "30%" }}
+                      flexBasis={{ base: '100%', md: '45%', xl: '30%' }}
                       margin="auto"
                     >
                       <Link
@@ -170,7 +170,7 @@ const Sponsorship = () => {
                         target="_blank"
                       >
                         <NextImage
-                          style={{ margin: "auto" }}
+                          style={{ margin: 'auto' }}
                           alt={`${title} image`}
                           width={width || undefined}
                           src={image}

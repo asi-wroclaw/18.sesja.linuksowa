@@ -1,16 +1,16 @@
-import { Box, VStack, Heading, useTheme } from "@chakra-ui/react";
-import { useState } from "react";
-import DaySelect from "./DaySelect";
-import Speech from "./Speech";
-import { SATURDAY_AGENDA, SUNDAY_AGENDA } from "../../assets/AgendaData";
+import { Box, VStack, Heading, useTheme } from '@chakra-ui/react';
+import { useState } from 'react';
+import DaySelect from './DaySelect';
+import Speech from './Speech';
+import { SATURDAY_AGENDA, SUNDAY_AGENDA } from '../../assets/AgendaData';
 
 const Agenda = () => {
   const [isSaturday, setSaturday] = useState<boolean>(true);
   const theme = useTheme();
 
   const content = {
-    saturdayOption: "Sobota 22 kwietnia",
-    sundayOption: "Niedziela 23 kwietnia",
+    saturdayOption: 'Sobota 22 kwietnia',
+    sundayOption: 'Niedziela 23 kwietnia',
   };
   const days = [
     {
@@ -53,14 +53,14 @@ const Agenda = () => {
           alignSelf="flex-start"
           as="h2"
           color="whiteAlpha.900"
-          fontSize={["3xl", "5xl", "7xl"]}
+          fontSize={['3xl', '5xl', '7xl']}
         >
           Agenda
         </Heading>
       </Box>
       <VStack gap="10" width="inherit">
         <DaySelect days={days} />
-        <Box width={["95%", "80%", "70%", "60%"]} zIndex="30" margin="auto">
+        <Box width={['95%', '80%', '70%', '60%']} zIndex="30" margin="auto">
           {(isSaturday ? SATURDAY_AGENDA : SUNDAY_AGENDA).map((speech) => (
             <Speech
               key={`${speech.title}-${speech.start}-${speech.title}`}
