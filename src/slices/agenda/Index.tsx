@@ -9,8 +9,8 @@ const Agenda = () => {
   const theme = useTheme();
 
   const content = {
-    saturdayOption: 'Sobota 22 kwietnia',
-    sundayOption: 'Niedziela 23 kwietnia',
+    saturdayOption: 'Sobota 20 kwietnia',
+    sundayOption: 'Niedziela 21 kwietnia',
   };
   const days = [
     {
