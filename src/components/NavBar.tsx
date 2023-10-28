@@ -24,7 +24,7 @@ import logo from '../assets/logo-duze-pl.webp';
 import config from '../config';
 import DefaultButton from './DefaultButton';
 
-export const HEADER_HEIGHT = 60;
+export const HEADER_HEIGHT = 70;
 
 const NavBarStyle: StyleProps = {
   height: `${HEADER_HEIGHT}px`,
