@@ -1,5 +1,5 @@
 const config = {
-  siteUrl: 'https://18.sesja.linuksowa.pl/',
+  siteUrl: 'https://sesja.linuksowa.pl/',
   generateRobotsTxt: true,
 };
 

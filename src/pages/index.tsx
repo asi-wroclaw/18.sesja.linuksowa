@@ -44,7 +44,7 @@ export default function Home() {
           content="18. Sesja Linuksowa | Wrocław, Polska"
           property="og:title"
         ></meta>
-        <meta content="http://18.sesja.linuksowa.pl/" property="og:url"></meta>
+        <meta content="http://sesja.linuksowa.pl/" property="og:url"></meta>
         <meta
           content="Sesja Linuksowa to największa w Polsce konferencja poświęcona rozwiązaniom Open Source oraz najnowszym trendom w systemach z rodziny GNU/Linux."
           property="og:description"

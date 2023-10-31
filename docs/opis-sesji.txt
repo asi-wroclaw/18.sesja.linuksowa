@@ -1,4 +1,4 @@
-Chcieliśmy was zaprosić na [18 Sesję Linuksową](https://18.sesja.linuksowa.pl) - Konferencja dedykowana Oprogramowaniu Open Source mająca na celu zbliżenie Developerów, zwykłych użytkowników jak i Firmy zaangażowane w oprogramowanie Open Source oraz promowanie najnowszych trendów i rozwiązań w branży.
+Chcieliśmy was zaprosić na [18 Sesję Linuksową](https://sesja.linuksowa.pl) - Konferencja dedykowana Oprogramowaniu Open Source mająca na celu zbliżenie Developerów, zwykłych użytkowników jak i Firmy zaangażowane w oprogramowanie Open Source oraz promowanie najnowszych trendów i rozwiązań w branży.
 
 Wydarzenie planowane jest na 20-21 kwietnia, i odbywać się będzie we Wrocławskim Centrum Kongresowym Politechniki Wrocławskiej. Wstęp jest wolny dla wszystkich zainteresowanych FOSS,  programistów, zagorzałych sysadminów jak i dopiero rozpoczynających swoją przygodę z Open Source i Linuksem.
 

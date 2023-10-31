@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://18.sesja.linuksowa.pl/
+Host: https://sesja.linuksowa.pl/
 
 # Sitemaps
-Sitemap: https://18.sesja.linuksowa.pl/sitemap.xml
+Sitemap: https://sesja.linuksowa.pl/sitemap.xml
