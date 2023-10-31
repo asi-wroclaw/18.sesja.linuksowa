@@ -80,8 +80,6 @@ jobs:
           SHOW_AGENDA: ${{ vars.SHOW_AGENDA }}
           SHOW_SPEAKERS: ${{ vars.SHOW_SPEAKERS }}
 
-      - name: Static HTML export with Next.js
-        run: ${{ steps.detect-package-manager.outputs.runner }} next export
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
