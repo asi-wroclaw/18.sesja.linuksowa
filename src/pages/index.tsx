@@ -1,5 +1,6 @@
 import NavBar from '@/components/NavBar';
 import Contact from '@/slices/Contact';
+import C4p from '@/slices/C4p';
 import PreviousEdition from '@/slices/PreviousEdition';
 import Head from 'next/head';
 import { SPEAKERS } from '../assets/speakers/speakersData';
@@ -19,6 +20,7 @@ const Main = () => {
       <NavBar />
       <HeadSlice />
       <AboutUs />
+      {config.SHOW_CALL_FOR_PAPERS && <C4p />}
       {config.SHOW_SPEAKERS && <Speakers speakersData={SPEAKERS} />}
       {config.SHOW_AGENDA && <Agenda />}
       <PreviousEdition />

@@ -79,6 +79,7 @@ jobs:
           SEND_MESSAGE_URL: ${{ vars.SEND_MESSAGE_URL }}
           SHOW_AGENDA: ${{ vars.SHOW_AGENDA }}
           SHOW_SPEAKERS: ${{ vars.SHOW_SPEAKERS }}
+          SHOW_CALL_FOR_PAPERS: ${{ vars.SHOW_CALL_FOR_PAPERS }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
