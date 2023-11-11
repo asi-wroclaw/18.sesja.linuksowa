@@ -33,7 +33,7 @@ const Agenda = () => {
       id="agenda"
       zIndex="2"
       width="100%"
-      bg="#000000"
+      bg="blackAlpha.900"
       minHeight="100vh"
       paddingTop="50"
       paddingBottom="100"

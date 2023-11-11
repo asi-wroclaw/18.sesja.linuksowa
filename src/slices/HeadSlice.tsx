@@ -9,7 +9,7 @@ import config from '../config';
 const HeadContainerStyle: StyleProps = {
   height: 'max(100vh,700px)',
   width: '100%',
-  bg: '#000000',
+  bg: 'blackAlpha.900',
 };
 
 const Title = () => {
