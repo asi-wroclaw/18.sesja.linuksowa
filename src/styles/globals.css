@@ -100,7 +100,7 @@
 }
 
 html {
-  background: black;
+  background: rgba(0, 0, 0, 0.92);
 }
 
 html,
@@ -123,12 +123,7 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgba(0, 0, 0, 0.92);
 }
 
 a {

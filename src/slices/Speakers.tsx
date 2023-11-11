@@ -192,7 +192,7 @@ const Speakers = ({ speakersData }: { speakersData: SpeakerProps[] }) => {
 
   if (!speakersData.length) return null;
   return (
-    <Box id="speakers" backgroundColor="black" minH="40vh">
+    <Box id="speakers" bg="blackAlpha.900" minH="40vh">
       <Box
         display="flex"
         justifyContent="center"
