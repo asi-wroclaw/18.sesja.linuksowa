@@ -1,4 +1,5 @@
 import DefaultButton from '@/components/DefaultButton';
+import { ArrowForwardIcon } from '@chakra-ui/icons';
 import { Box, Link, Flex, Heading, Center } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 
@@ -44,6 +45,9 @@ const C4p = () => {
           target="_blank"
         >
           <DefaultButton
+            fontSize={{ base: '25px', lg: '30px' }}
+            padding={{ base: '5', lg: "10" }}
+            rightIcon={<ArrowForwardIcon />}
             _hover={{ color: 'black' }}
             text={content.c4pButtonText}
           />
