@@ -123,7 +123,7 @@ const Sponsorship = () => {
           </Heading>
           <Link
             _hover={{ textDecorationLine: 'none' }}
-            href="/18-sesja-oferta-sponsorska.pdf"
+            href="/18-sesja-linuksowa-oferta-sponsorska.pdf"
             target="_blank"
           >
             <DefaultButton
