@@ -1,18 +1,18 @@
+import { SPEAKERS } from '@/assets/speakers/speakersData';
 import NavBar from '@/components/NavBar';
-import Contact from '@/slices/Contact';
-import C4p from '@/slices/C4p';
-import PreviousEdition from '@/slices/PreviousEdition';
-import Head from 'next/head';
-import { SPEAKERS } from '../assets/speakers/speakersData';
-import config from '../config';
-import AboutUs from '../slices/AboutUs';
-import HeadSlice from '../slices/HeadSlice';
-import Map from '../slices/Map';
-import Speakers from '../slices/Speakers';
-import Sponsorship from '../slices/Sponsorship';
-import Agenda from '../slices/agenda/Index';
-
 import ParticlesBackground from '@/components/ParticlesBackground';
+import config from '@/config';
+import AboutUs from '@/slices/AboutUs';
+import C4p from '@/slices/C4p';
+import Contact from '@/slices/Contact';
+import HeadSlice from '@/slices/HeadSlice';
+import Map from '@/slices/Map';
+import PreviousEdition from '@/slices/PreviousEdition';
+import Speakers from '@/slices/Speakers';
+import Sponsorship from '@/slices/Sponsorship';
+import Tickets from '@/slices/Tickets';
+import Agenda from '@/slices/agenda/Index';
+import Head from 'next/head';
 
 const Main = () => {
   return (
@@ -24,6 +24,7 @@ const Main = () => {
       {config.SHOW_SPEAKERS && <Speakers speakersData={SPEAKERS} />}
       {config.SHOW_AGENDA && <Agenda />}
       <PreviousEdition />
+      <Tickets />
       <Map />
       <Sponsorship />
       {config.SEND_MESSAGE_URL && (
