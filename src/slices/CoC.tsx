@@ -1,4 +1,4 @@
-import { useTheme, Center, Link } from '@chakra-ui/react';
+import { useTheme, Center, Link, Text } from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 
 const CoC = () => {
@@ -30,13 +30,12 @@ const CoC = () => {
     >
       {content.cocText}
       <Link
-        _hover={{ color: 'whiteAlpha.900' }}
         href={content.cocLink}
         target="_blank"
         padding={2}
-        color="black"
-      >
-        {content.cocButtonText}
+      ><Text
+      as='u'>
+        {content.cocButtonText}</Text>
       </Link>
     </Center>
   );
