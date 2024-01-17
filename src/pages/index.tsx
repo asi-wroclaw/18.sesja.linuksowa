@@ -12,6 +12,7 @@ import Speakers from '@/slices/Speakers';
 import Sponsorship from '@/slices/Sponsorship';
 import Tickets from '@/slices/Tickets';
 import Agenda from '@/slices/agenda/Index';
+import CoC from '@/slices/CoC';
 import Head from 'next/head';
 
 const Main = () => {
@@ -30,6 +31,7 @@ const Main = () => {
       {config.SEND_MESSAGE_URL && (
         <Contact sendMessageUrl={config.SEND_MESSAGE_URL} />
       )}
+      <CoC />
       <ParticlesBackground />
     </main>
   );
