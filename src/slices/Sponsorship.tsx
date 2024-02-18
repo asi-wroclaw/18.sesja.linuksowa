@@ -20,6 +20,7 @@ import programistamag from '../assets/loga/logo-programistamag.jpg';
 import pwr from '../assets/loga/logo-pwr.png';
 import antmicro from '../assets/loga/logo_antmicro.svg';
 import plug from '../assets/loga/plug.png';
+import clug from '../assets/loga/CLUG.png';
 
 type SponsorshipEntity = {
   title: string;
@@ -70,7 +71,8 @@ const Sponsorship = () => {
           href: 'https://linux-magazine.pl/',
           width: '200',
         },
-        { image: plug, href: 'https://linux.org.pl/', width: '220' },
+        { image: plug, href: 'https://linux.org.pl/', width: '300' },
+        { image: clug, width: '220'}
       ],
     },
   ] as SponsorshipEntity[];
