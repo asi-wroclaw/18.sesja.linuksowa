@@ -72,7 +72,7 @@ const Sponsorship = () => {
           width: '200',
         },
         { image: plug, href: 'https://linux.org.pl/', width: '300' },
-        { image: clug, width: '220'}
+        { image: clug, href: 'https://clug.space/', width: '220'}
       ],
     },
   ] as SponsorshipEntity[];
