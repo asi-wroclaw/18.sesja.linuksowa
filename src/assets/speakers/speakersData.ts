@@ -15,6 +15,32 @@ import Sobkowski from './msobkowski.png';
 
 export const SPEAKERS: SpeakerProps[] = [
   {
+    image: Siewca,
+    urls: {
+      website: '',
+      twitter: '',
+      linkedin: '',
+      github: '',
+    },
+    name: 'Jakub Juszczakiewicz',
+    description: [
+      'Pasjonat Linuksa i Otwartego oprogramowania. Zawodowo sysadmin i programista niskopoziomowy - aktualnie podwykonawca w jednej z międzynarodowych kombinatów informatycznych. Prywatnie m.in. zapalony jeździec konny i żeglarz jachtowy oraz fotograf, jak również miłośnik gór.',
+    ],
+  },
+  {
+    image: Vovcia,
+    urls: {
+      website: '',
+      twitter: '',
+      linkedin: '',
+      github: '',
+    },
+    name: 'Vladimir Mitiouchev',
+    description: [
+      'Administrator, programista, architekt. Współzałożyciel fundacji CLUG.',
+    ],
+  },
+  {
     image: blankAvatar,
     urls: {
       website: '',
@@ -22,9 +48,22 @@ export const SPEAKERS: SpeakerProps[] = [
       linkedin: '',
       github: '',
     },
-    name: 'Może ty?',
+    name: 'Kamila Szewczyk',
     description: [
-      'Dołącz do nas i podziel się swoją wiedzą!',
+      'A full-time student in Germany. A programmer and aspiring mathematician, primarily interested in compiler construction, data compression, esoteric languages, statistics and numerical algorithms. Maintainer of various Linux tools and packages.',
+    ],
+  },
+  {
+    image: blankAvatar,
+    urls: {
+      website: '',
+      twitter: '',
+      linkedin: '',
+      github: '',
+    },
+    name: 'Ignat Korchagin',
+    description: [
+      'Ignat is a systems engineer at Cloudflare working mostly on Linux, platforms and hardware security. Ignat’s interests are cryptography, hacking, and low-level programming. Before Cloudflare, Ignat worked as a senior security engineer for Samsung Electronics’ Mobile Communications Division. His solutions may be found in many older Samsung smart phones and tablets. Ignat started his career as a security researcher in the Ukrainian government’s communications services.',
     ],
   },
 ];
