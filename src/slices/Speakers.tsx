@@ -105,31 +105,26 @@ const SpeakerModal = ({
       >
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader color="whiteAlpha.900">{name}</ModalHeader>
+          <ModalHeader color="whiteAlpha.900" textAlign="center" fontSize="2xl">{name}</ModalHeader>
           <ModalCloseButton color="whiteAlpha.900" />
           <ModalBody color="whiteAlpha.900">
-            <VStack>
-              <Box height={`${imageHeight}px`} width={`${imageWidth}px`}>
+            <VStack gap='3vh'>
+              <Box w={300} h={300} position="relative" >
                 <Image
-                  height={imageHeight}
-                  width={imageWidth}
+                  fill
                   alt={`${name} image`}
+                  sizes="300px"
                   style={{ objectFit: 'cover', objectPosition: 'top' }}
                   src={image}
                 />
               </Box>
               {(description || [])?.map((descriptionText, index) => (
-                <Text key={`${descriptionText}-${index}`} minH="15px">
+                <Text textAlign="center" key={`${descriptionText}-${index}`} minH="15px" padding='0vh 0vh 2vh 0vh'>
                   {descriptionText}
                 </Text>
               ))}
             </VStack>
           </ModalBody>
-          <ModalFooter>
-            <Button colorScheme="blue" mr={3} onClick={onClose}>
-              {t('close')}
-            </Button>
-          </ModalFooter>
         </ModalContent>
       </Modal>
     </DarkMode>
