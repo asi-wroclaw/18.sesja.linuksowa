@@ -90,7 +90,7 @@ const NavBar = () => {
 
     { text: t('menu.previous'), sectionId: 'previous' },
     { text: t('menu.sponsors'), sectionId: 'sponsors' },
-    { text: t('menu.contact'), sectionId: 'contact' },
+   // { text: t('menu.contact'), sectionId: 'contact' },
   ].filter(({ text }) => text);
 
   const changeBackground = () => {
