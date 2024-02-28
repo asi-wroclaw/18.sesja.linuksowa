@@ -1,17 +1,9 @@
 import { SpeakerProps } from '@/slices/Speakers';
 import blankAvatar from './blank-avatar.jpg';
-import FilipDrapejkowski from './Filip_Drapejkowski.webp';
-import InformatykZakladowy from './Informatyk_Zakladowy.webp';
-import CezaryDynak from './Cezary_Dynak.webp';
-import Mewp from './mewp.webp';
 import Siewca from './siewca.webp';
 import Vovcia from './vovcia.webp';
-import KamilGalek from './Kamil_Galek.webp';
-import RJW from './RJW.webp';
-import Pycinski from './Pycinski.webp';
-import Dorosz from './Dorosz.webp';
-import Opasiak from './Opasiak.webp';
-import Sobkowski from './msobkowski.png';
+import Piotrowski from './piotrowski.webp';
+import Szewczyk from './szewczyk.webp';
 
 export const SPEAKERS: SpeakerProps[] = [
   {
@@ -41,7 +33,7 @@ export const SPEAKERS: SpeakerProps[] = [
     ],
   },
   {
-    image: blankAvatar,
+    image: Szewczyk,
     urls: {
       website: '',
       twitter: '',
@@ -54,16 +46,16 @@ export const SPEAKERS: SpeakerProps[] = [
     ],
   },
   {
-    image: blankAvatar,
+    image: Piotrowski,
     urls: {
       website: '',
       twitter: '',
       linkedin: '',
       github: '',
     },
-    name: 'Ignat Korchagin',
+    name: 'Mateusz Piotrowski',
     description: [
-      'Ignat is a systems engineer at Cloudflare working mostly on Linux, platforms and hardware security. Ignat’s interests are cryptography, hacking, and low-level programming. Before Cloudflare, Ignat worked as a senior security engineer for Samsung Electronics’ Mobile Communications Division. His solutions may be found in many older Samsung smart phones and tablets. Ignat started his career as a security researcher in the Ukrainian government’s communications services.',
+      'Mateusz Piotrowski is a Systems Engineer based in Berlin, Germany. He has been contributing to open source for a long time, primarily to the FreeBSD and OpenZFS projects. Since 2022, he has been serving on the FreeBSD Core Team. Professionally, he consults companies around performance engineering and open-source development.',
     ],
   },
 ];
