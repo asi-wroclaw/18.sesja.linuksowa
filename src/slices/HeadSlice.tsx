@@ -1,6 +1,13 @@
 import DefaultButton from '@/components/DefaultButton';
 import scrollToSection from '@/utils/scrollToSection';
-import { Box, Heading, Stack, StyleProps, VStack, useTheme } from '@chakra-ui/react';
+import {
+  Box,
+  Heading,
+  Stack,
+  StyleProps,
+  VStack,
+  useTheme,
+} from '@chakra-ui/react';
 import { useTranslation } from 'next-export-i18n';
 import Image from 'next/image';
 import pinguin from '../assets/pinguin.svg';
@@ -89,6 +96,11 @@ const HeadDescription = () => {
           _hover={{ color: 'black' }}
         />
       )}
+      <DefaultButton
+        onClick={() => scrollToSection('tickets')}
+        text={t('getTicketsCaps')}
+        _hover={{ color: 'black' }}
+      />
     </VStack>
   );
 };

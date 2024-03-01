@@ -18,7 +18,7 @@ const Tickets = () => {
 
   return (
     <Box
-      id="previous"
+      id="tickets"
       as="section"
       position="relative"
       zIndex="2"
