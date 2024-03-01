@@ -4,6 +4,7 @@ import Siewca from './siewca.webp';
 import Vovcia from './vovcia.webp';
 import Piotrowski from './piotrowski.webp';
 import Szewczyk from './szewczyk.webp';
+import Wysocki from './wysocki.webp';
 
 export const SPEAKERS: SpeakerProps[] = [
   {
@@ -56,6 +57,19 @@ export const SPEAKERS: SpeakerProps[] = [
     name: 'Mateusz Piotrowski',
     description: [
       'Mateusz Piotrowski is a Systems Engineer based in Berlin, Germany. He has been contributing to open source for a long time, primarily to the FreeBSD and OpenZFS projects. Since 2022, he has been serving on the FreeBSD Core Team. Professionally, he consults companies around performance engineering and open-source development.',
+    ],
+  },
+  {
+    image: Wysocki,
+    urls: {
+      website: '',
+      twitter: '',
+      linkedin: '',
+      github: '',
+    },
+    name: 'Rafał Wysocki',
+    description: [
+      "The importance of thermal control has been growing since the outset of computing and it becomes critical as the sizes of systems get ever smaller and they are more and more constrained by their form factors. In contemporary systems, it is often impossible to run all of the components at full capacity at the same time and thermal control scenarios involve constraining performance and distributing power, so as to prevent the system from getting too hot while still allowing the users' expectations to be met. Many of these systems run the Linux kernel and it has to adequately respond to the thermal control challenges, which will be the focus of my talk. I will describe the Linux kernel's thermal control subsystem and explain how it works. I will also talk about the possible directions of its development in the future related to some interesting use cases that need to be addressed.",
     ],
   },
 ];
