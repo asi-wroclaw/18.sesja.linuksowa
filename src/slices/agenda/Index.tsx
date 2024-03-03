@@ -1,4 +1,4 @@
-import { Box, Heading, VStack, useTheme } from '@chakra-ui/react';
+import { Box, Heading, VStack, useTheme, Text } from '@chakra-ui/react';
 import { useState } from 'react';
 import { SATURDAY_AGENDA, SUNDAY_AGENDA } from '../../assets/AgendaData';
 import DaySelect from './DaySelect';
@@ -16,13 +16,11 @@ const Agenda = () => {
     {
       text: content.saturdayOption,
       select: () => setSaturday(true),
-
       selected: isSaturday,
     },
     {
       text: content.sundayOption,
       select: () => setSaturday(false),
-
       selected: !isSaturday,
     },
   ];
@@ -58,8 +56,8 @@ const Agenda = () => {
           Agenda
         </Heading>
       </Box>
-      <VStack gap="10" width="inherit">
-        <DaySelect days={days} />
+      <VStack gap="10" width="inherit" padding="5vh 0vh 0vh 0vh">
+        {/*<DaySelect days={days} />*/}
         <Box width={['95%', '80%', '70%', '60%']} zIndex="30" margin="auto">
           {(isSaturday ? SATURDAY_AGENDA : SUNDAY_AGENDA).map((speech) => (
             <Speech
