@@ -56,7 +56,7 @@ export const SATURDAY_AGENDA: SpeechItem[] = [
     end: 'TBA',
     title: 'Low cost, silicon based semiconductor manufacturing at home',
     author: 'Patryk Wlazłyń',
-    lang: ['pl'],
+    lang: ['en'],
     description: ["I'll go through a small lab that I have built with the team for silicon based semiconductor manufacturing powered with open source software, that allowed us to create resistors, diodes, solar cells and NMOS transistors."],
     recording: '',
   },

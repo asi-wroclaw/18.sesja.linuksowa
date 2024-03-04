@@ -5,6 +5,7 @@ import Vovcia from './vovcia.webp';
 import Piotrowski from './piotrowski.webp';
 import Szewczyk from './szewczyk.webp';
 import Wysocki from './wysocki.webp';
+import Wlazlyn from './wlazlyn.webp';
 
 export const SPEAKERS: SpeakerProps[] = [
   {
@@ -99,7 +100,7 @@ export const SPEAKERS: SpeakerProps[] = [
     ],
   },
   {
-    image: blankAvatar,
+    image: Wlazlyn,
     urls: {
       website: '',
       twitter: '',
