@@ -80,19 +80,6 @@ export const SPEAKERS: SpeakerProps[] = [
       linkedin: '',
       github: '',
     },
-    name: 'Maciej Lasyk',
-    description: [
-      '',
-    ],
-  },
-  {
-    image: blankAvatar,
-    urls: {
-      website: '',
-      twitter: '',
-      linkedin: '',
-      github: '',
-    },
     name: 'Filip Dorosz',
     description: [
       'DevOps Engineer with passion. My main interest lies in SRE and observability. I really do believe in Open Source software. While debugging performance issues I mainly listen to Synthwave music and Neue Deutsche Härte',
