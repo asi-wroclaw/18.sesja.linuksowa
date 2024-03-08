@@ -7,6 +7,7 @@ import Szewczyk from './szewczyk.webp';
 import Wysocki from './wysocki.webp';
 import Wlazlyn from './wlazlyn.webp';
 import Mierzejewski from './mierzejewski.webp';
+import Dorosz from './Dorosz.webp';
 
 export const SPEAKERS: SpeakerProps[] = [
   {
@@ -75,14 +76,14 @@ export const SPEAKERS: SpeakerProps[] = [
     ],
   },
   {
-    image: blankAvatar,
+    image: Dorosz,
     urls: {
       website: '',
       twitter: '',
       linkedin: '',
       github: '',
     },
-    name: 'Filip Dorosz',
+    name: 'Filip Dorosz, OVHcloud',
     description: [
       'DevOps Engineer with passion. My main interest lies in SRE and observability. I really do believe in Open Source software. While debugging performance issues I mainly listen to Synthwave music and Neue Deutsche Härte',
     ],
@@ -134,9 +135,35 @@ export const SPEAKERS: SpeakerProps[] = [
       linkedin: '',
       github: '',
     },
-    name: 'Krzysztof Biegański',
+    name: 'Krzysztof Biegański, Antmicro',
     description: [
       'Krzysztof is a Senior Software Engineer at Antmicro. In his everyday work, he mostly focuses on open source SystemVerilog tooling. He is one of the main contributors to Verilator, responsible for, among other things, extending the scheduler in Verilator to support timing constructs.',
+    ],
+  },
+  {
+    image: blankAvatar,
+    urls: {
+      website: '',
+      twitter: '',
+      linkedin: '',
+      github: '',
+    },
+    name: 'Artur Frenszek-Iwicki',
+    description: [
+      'Professional developer of 10 years and non-professional tinkerer of 10 more. Package maintainer in Fedora Linux.',
+    ],
+  },
+  {
+    image: blankAvatar,
+    urls: {
+      website: '',
+      twitter: '',
+      linkedin: '',
+      github: '',
+    },
+    name: 'Piotr Węgrzyn',
+    description: [
+      'Student, pasjonat różnych niskopoziomowych dziedzin informatyki (również tych poniżej assemblera 🙂 ). Poza klikaniem w klawiaturę, lubię zająć się też dłubaniem przy elektronice, wspinaczką i żeglarstwem. No i oczywiście jak wszyscy tutaj - Linux i Open Source!',
     ],
   },
 ];

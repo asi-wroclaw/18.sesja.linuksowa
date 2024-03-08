@@ -161,7 +161,7 @@ const Speaker = ({ image, urls, name, description }: SpeakerProps) => {
           <Heading
             margin="auto"
             textAlign="center"
-            fontSize="3xl"
+            fontSize="2xl"
             as="h3"
             color="whiteAlpha.900"
           >
