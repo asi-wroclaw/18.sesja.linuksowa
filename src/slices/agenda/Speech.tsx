@@ -39,12 +39,12 @@ const Speech = ({ speech }: { speech: SpeechItem }) => {
         '170px 1fr auto',
         '200px 1fr auto',
       ]}
-      bg={isOpen ? 'blackAlpha.900' : 'blackAlpha.700'}
+      //bg={isOpen ? 'blackAlpha.900' : 'blackAlpha.700'}
       paddingBottom={3}
       paddingTop={3}
       borderBottom={`0.25rem ${theme.colors.primary} solid`}
     >
-      <GridItem area="time" onClick={() => description && onToggle()}>
+      <GridItem area="time" onClick={() => description && onToggle()} textAlign='center'>
         <Text fontSize={['sm', 'md', 'xl', '2xl']} color="whiteAlpha.900">
          {/*{start}-{end} */} 
          {start}{end}
