@@ -9,6 +9,7 @@ import Wlazlyn from './wlazlyn.webp';
 import Mierzejewski from './mierzejewski.webp';
 import Dorosz from './Dorosz.webp';
 import Bieganski from './bieganski.webp';
+import Iwicki from './iwicki.webp';
 
 export const SPEAKERS: SpeakerProps[] = [
   {
@@ -90,7 +91,7 @@ export const SPEAKERS: SpeakerProps[] = [
     ],
   },
   {
-    image: blankAvatar,
+    image: Iwicki,
     urls: {
       website: '',
       twitter: '',
