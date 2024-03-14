@@ -105,7 +105,7 @@ export const SPEAKERS: SpeakerProps[] = [
     ],
   },
   {
-    image: blankAvatar,
+    image: Piotro,
     urls: {
       website: '',
       twitter: '',
@@ -157,7 +157,7 @@ export const SPEAKERS: SpeakerProps[] = [
     ],
   },
   {
-    image: Piotro,
+    image: blankAvatar,
     urls: {
       website: '',
       twitter: '',
