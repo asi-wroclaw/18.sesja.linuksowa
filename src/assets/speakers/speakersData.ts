@@ -10,6 +10,7 @@ import Mierzejewski from './mierzejewski.webp';
 import Dorosz from './Dorosz.webp';
 import Bieganski from './bieganski.webp';
 import Iwicki from './iwicki.webp';
+import Piotro from './piotro.webp';
 
 export const SPEAKERS: SpeakerProps[] = [
   {
@@ -156,7 +157,7 @@ export const SPEAKERS: SpeakerProps[] = [
     ],
   },
   {
-    image: blankAvatar,
+    image: Piotro,
     urls: {
       website: '',
       twitter: '',
