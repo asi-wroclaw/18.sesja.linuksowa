@@ -96,12 +96,10 @@ export const SATURDAY_AGENDA: SpeechItem[] = [
   {
     start: '',
     end: 'TBA',
-    title: 'Free/Open software w prywatnym użyciu - czy da się nie będąc adminem?',
+    title: 'Praktycznie wykorzystanie sprzętowych urządzeń uwierzytelniających na przykładzie Yubikey.',
     author: 'Piotr Pyciński',
     lang: ['pl'],
-    description: ["Postaram się przeglądnąć najpopularniejsze wolne / otwarte oprogramowanie, które można wykorzystać w domu. Spróbujemy zmierzyć się z jego instalacją przez osoby nie posiadające wyszkolenia informatycznego.",
-    "",
-    "Dodatkowo przytoczę 5-7 lat osobistych doświadczeń z hostowaniem własnej poczty oraz usług domowych. Zastanowimy się czy wolne / otwarte oprogramowanie jest przygotowane na osoby nie techniczne."],
+    description: ["Postaram się przybliżyć podstawowe możliwości sprzętowych kluczy od Yubico. To nie jest reklama produktu a pokazanie możliwości tych sprytnych urządzeń w codziennej pracy admina. Postaram się pokazać jak przechowywać klucze SSH, podpisywać cyfrowo maile, zabezpieczać pliki czy Keepassa. Jeżeli jesteś posiadaczem takiego klucza, weź ze sobą!"],
     recording: '',
   },
   {
