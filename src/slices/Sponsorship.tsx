@@ -39,14 +39,16 @@ const Sponsorship = () => {
 
   const sponsorsAndOrganizations = [
     {
+      title: t('sponsors'),
+      logos: [
+        { image: antmicro, href: 'https://antmicro.com/', width: '1200' },
+      ],
+    },
+    {
       title: t('organizers'),
       logos: [
         { image: asi, href: 'https://www.asi.wroclaw.pl/', width: '1000' },
       ],
-    },
-    {
-      title: t('sponsors'),
-      logos: [],
     },
     {
       title: t('honorary-patrons'),
@@ -72,7 +74,7 @@ const Sponsorship = () => {
           width: '200',
         },
         { image: plug, href: 'https://linux.org.pl/', width: '300' },
-        { image: clug, href: 'https://clug.space/', width: '220'}
+        { image: clug, href: 'https://clug.space/', width: '220' },
       ],
     },
   ] as SponsorshipEntity[];
