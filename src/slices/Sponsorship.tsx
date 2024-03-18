@@ -21,6 +21,7 @@ import pwr from '../assets/loga/logo-pwr.png';
 import antmicro from '../assets/loga/logo_antmicro.svg';
 import plug from '../assets/loga/plug.png';
 import clug from '../assets/loga/CLUG.png';
+import ovh from '../assets/loga/OVHcloud_master_logo_fullcolor_RGB.png';
 
 type SponsorshipEntity = {
   title: string;
@@ -42,6 +43,7 @@ const Sponsorship = () => {
       title: t('sponsors'),
       logos: [
         { image: antmicro, href: 'https://antmicro.com/', width: '1200' },
+        { image: ovh, href: 'https://www.ovhcloud.com/pl/', width: '1200' },
       ],
     },
     {
