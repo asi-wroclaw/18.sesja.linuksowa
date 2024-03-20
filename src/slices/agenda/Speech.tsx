@@ -46,8 +46,7 @@ const Speech = ({ speech }: { speech: SpeechItem }) => {
     >
       <GridItem area="time" onClick={() => description && onToggle()} textAlign='center'>
         <Text fontSize={['sm', 'md', 'xl', '2xl']} color="whiteAlpha.900">
-         {/*{start}-{end} */} 
-         {start}{end}
+         {start}-{end} 
         </Text>
       </GridItem>
       <GridItem

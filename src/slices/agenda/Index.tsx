@@ -57,7 +57,7 @@ const Agenda = () => {
         </Heading>
       </Box>
       <VStack gap="10" width="inherit" padding="5vh 0vh 0vh 0vh">
-        {/*<DaySelect days={days} />*/}
+        <DaySelect days={days} />
         <Box width={['95%', '80%', '70%', '60%']} zIndex="30" margin="auto">
           {(isSaturday ? SATURDAY_AGENDA : SUNDAY_AGENDA).map((speech) => (
             <Speech
