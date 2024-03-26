@@ -96,7 +96,7 @@ export const SUNDAY_AGENDA: SpeechItem[] = [
     end: '10:50',
     title: 'Performance analysis and benchmarking on Linux',
     author: 'Krzysztof Biegański, Antmicro',
-    lang: ['pl'],
+    lang: ['en'],
     description: ['This presentation will provide an overview of the world of performance analysis and benchmarking on Linux, starting with how to correctly assess optimization needs. We’ll also explore open source tools such as perf that let us identify bottlenecks and similar issues, as well as talk about reducing noise in our measurements to ensure accurate and reliable performance assessment.'],
     recording: '',
   },
