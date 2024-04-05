@@ -1,50 +1,53 @@
 import blankAvatar from './blank-avatar.jpg';
 import { OrganizerProps } from '@/slices/Organizers';
+import { useTranslation } from 'next-export-i18n';
+
+function getTranslation() {
+  const { t } = useTranslation('common');
+  return t('team');
+}
 
 export const ORGANIZERS: OrganizerProps[] = [
+
+
   {
     image: blankAvatar,
     name: 'Michał Korczak',
-    role: "Master of Ceremony",
+    role: getTranslation(),
   },
   {
     image: blankAvatar,
     name: 'Tomasz Świątek',
-    role: "Prelection Sponsorship Manager",
+    role: "Organizator ds. Sponsorów",
   },
   {
     image: blankAvatar,
     name: 'Jakub Śliwka',
-    role: "Human Resources and Communication",
-  },
-  {
-    image: blankAvatar,
-    name: 'Bartek Konat', 
-    role: "Chief of Design",
-  },
-  {
-    image: blankAvatar,
-    name: 'Filip Pyra', 
-    role: "Public Relations",
-  },
-  {
-    image: blankAvatar,
-    name: 'Jakub Bosak',  
-    role: "Web development",
-  },
-  {
-    image: blankAvatar,
-    name: 'Przemysław Yaymontt',
-    role: "Human Resources",
+    role: "Organizator ds. Prelegentów",
   },
   {
     image: blankAvatar,
     name: 'Jacek Poziemski',  
-    role: "Human Resources and Communication",
+    role: "Organizator ds. Prelegentów",
+  },
+  {
+    image: blankAvatar,
+    name: 'Aleksandra Mokrzan',  
+    role: "Organizatorka ds. Marketingu",
+  },
+  {
+    image: blankAvatar,
+    name: 'Wiktor Rojecki',  
+    role: "Organizator ds. Marketingu",
   },
   {
     image: blankAvatar,
     name: 'Felix Zieliński',  
-    role: "Web development",
+    role: "Organizator ds. Strony",
+  },
+  {
+    image: blankAvatar,
+    name: 'Przemysław Yaymontt',
+    role: "Organizator ds. Wolontariuszy",
   },
 ];

@@ -50,7 +50,7 @@ const Organizer = ({ image, name, role }: OrganizerProps) => {
               src={image}
               //fill
             />
-          </Box>{' '}
+          </Box>
           <Heading
             margin="auto"
             textAlign="center"
@@ -65,7 +65,7 @@ const Organizer = ({ image, name, role }: OrganizerProps) => {
             textAlign="center"
             fontSize="3xl"
             as="h3"
-            color={theme.colors.secondary}
+            color={theme.colors.primary}
           >
             {role}
           </Heading>
@@ -116,7 +116,7 @@ const Organizers = ({
   return (
     <Box
       id="organizers"
-      bg={theme.colors.primary}
+      bg="blackAlpha.900"
       minH="40vh"
       overflow="hidden"
     >
@@ -130,10 +130,11 @@ const Organizers = ({
         zIndex="2"
         alignItems="center"
         overflow="hidden"
+        padding="5vh 0vh 0vh 0vh"
       >
         <IconButton
           aria-label="left-arrow"
-          background={theme.colors.secondary}
+          background={theme.colors.primary}
           color="white"
           borderRadius="full"
           position="relative"
@@ -141,7 +142,8 @@ const Organizers = ({
           onClick={() => slider?.slickPrev()}
         >
           <BiLeftArrowAlt />
-        </IconButton><Heading
+        </IconButton>
+        <Heading
           padding="0vh 5vh 0vh 5vh"
           //margin="auto"
           as="h2"
@@ -152,7 +154,7 @@ const Organizers = ({
         </Heading> 
         <IconButton
           aria-label="right-arrow"
-          background={theme.colors.secondary}
+          background={theme.colors.primary}
           color="white"
           borderRadius="full"
           position="relative"
