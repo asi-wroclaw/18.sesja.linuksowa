@@ -53,18 +53,17 @@ const Sponsorship = () => {
       ],
     },
     {
-      title: t('honorary-patrons'),
-      logos: [{ image: pwr, href: 'https://pwr.edu.pl/', width: '800' }],
-    },
-    {
       title: t('patrons'),
       logos: [
+        { image: clug, href: 'https://clug.space/', width: '220' },
         {
           image: hswro,
           href: 'https://www.hswro.org/',
           width: 200,
         },
-        {
+        { image: plug, href: 'https://linux.org.pl/', width: '300' },
+        { image: pwr, href: 'https://pwr.edu.pl/', width: '800'},
+      /*{
           image: programistamag,
           href: 'https://programistamag.pl/',
           width: '300',
@@ -74,9 +73,7 @@ const Sponsorship = () => {
           image: linuxMagazine,
           href: 'https://linux-magazine.pl/',
           width: '200',
-        },
-        { image: plug, href: 'https://linux.org.pl/', width: '300' },
-        { image: clug, href: 'https://clug.space/', width: '220' },
+        },*/
       ],
     },
   ] as SponsorshipEntity[];
