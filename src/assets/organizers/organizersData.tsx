@@ -48,7 +48,7 @@ export const ORGANIZERS: OrganizerProps[] = [
   },
   {
     image: blankAvatar,
-    name: 'Przemysław Jamontt',
+    name: 'Przemysław Yaymontt',
     role: "Organizator ds. Wolontariuszy",
   },
 ];
