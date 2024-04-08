@@ -7,6 +7,7 @@ import Jakub from "./sylwek.png";
 import Jacek from "./jackek.png";
 import Felix from "./felix.png";
 import Ola from "./ola.jpeg";
+import Wiktor from "./wiktor.png";
 
 export const ORGANIZERS: OrganizerProps[] = [
 
@@ -36,11 +37,11 @@ export const ORGANIZERS: OrganizerProps[] = [
     name: 'Aleksandra Mokrzan',  
     role: "Organizatorka ds. Marketingu",
   },
- // {
- //   image: blankAvatar,
- //   name: 'Wiktor Rojecki',
- //   role: "Organizator ds. Marketingu",
- // },
+  {
+    image: Wiktor,
+    name: 'Wiktor Rojecki',
+    role: "Organizator ds. Marketingu",
+  },
   {
     image: Felix,
     name: 'Felix Zieliński',  
