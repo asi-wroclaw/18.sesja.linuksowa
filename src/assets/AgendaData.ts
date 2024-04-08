@@ -7,7 +7,7 @@ export const SATURDAY_AGENDA: SpeechItem[] = [
     title: 'eBPF w Linuxie: Badanie wydajności i nie tylko',
     author: 'Filip Dorosz, OVHcloud',
     lang: ['pl'],
-    description: ["Co to właściwie jest eBPF i czemu warto go używać? Jak używać eBPF? Czy można tak zobaczyć coś użytecznego? Na te i wiele więcej pytań padną odpowiedzi w trakcie ekscytującej(a jakże!) prezentacji która pokaże jak można badać wydajność (i nie tylko!) systemu Linux."],
+    description: ["Co to właściwie jest eBPF i czemu warto go używać? Jak używać eBPF? Czy można tak zobaczyć coś użytecznego? Na te i wiele więcej pytań padną odpowiedzi w trakcie ekscytującej (a jakże!) prezentacji która pokaże jak można badać wydajność (i nie tylko!) systemu Linux."],
     recording: '',
   },
   {
