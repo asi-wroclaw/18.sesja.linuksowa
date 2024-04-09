@@ -8,6 +8,7 @@ import Jacek from "./jackek.png";
 import Felix from "./felix.png";
 import Ola from "./ola.jpeg";
 import Wiktor from "./wiktor.png";
+import Przemek from "./przemek.jpg"
 
 export const ORGANIZERS: OrganizerProps[] = [
 
@@ -48,7 +49,7 @@ export const ORGANIZERS: OrganizerProps[] = [
     role: "Organizator ds. Strony",
   },
   {
-    image: blankAvatar,
+    image: Przemek,
     name: 'Przemysław Jamontt',
     role: "Organizator ds. Wolontariuszy",
   },
