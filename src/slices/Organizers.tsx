@@ -133,6 +133,8 @@ const Organizers = ({
         padding="5vh 0vh 0vh 0vh"
       >
         <IconButton
+          fontSize='40px'
+          size='lg'
           aria-label="left-arrow"
           background={theme.colors.primary}
           color="white"
@@ -153,6 +155,8 @@ const Organizers = ({
           {t('team')}
         </Heading> 
         <IconButton
+          fontSize='40px'
+          size='lg'
           aria-label="right-arrow"
           background={theme.colors.primary}
           color="white"
