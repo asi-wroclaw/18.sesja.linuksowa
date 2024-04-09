@@ -5,6 +5,7 @@ export const SATURDAY_AGENDA: SpeechItem[] = [
     start: '9:45',
     end: '10:00',
     title: 'Opening Talk',
+    author: 'Michał Korczak',
     },
   {
     start: '10:00',
