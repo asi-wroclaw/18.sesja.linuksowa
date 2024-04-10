@@ -63,13 +63,13 @@ const Sponsorship = () => {
         },
         { image: plug, href: 'https://linux.org.pl/', width: '300' },
         { image: pwr, href: 'https://pwr.edu.pl/', width: '800'},
-      /*{
+        { image: programmers, href: 'https://4programmers.net/', width: '300' },
+      {
           image: programistamag,
           href: 'https://programistamag.pl/',
           width: '300',
         },
-        { image: programmers, href: 'https://4programmers.net/', width: '300' },
-        {
+       /* {
           image: linuxMagazine,
           href: 'https://linux-magazine.pl/',
           width: '200',
