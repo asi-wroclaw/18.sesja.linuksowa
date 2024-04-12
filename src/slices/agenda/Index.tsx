@@ -3,14 +3,16 @@ import { useState } from 'react';
 import { SATURDAY_AGENDA, SUNDAY_AGENDA } from '../../assets/AgendaData';
 import DaySelect from './DaySelect';
 import Speech from './Speech';
+import { useTranslation } from 'next-export-i18n';
 
 const Agenda = () => {
   const [isSaturday, setSaturday] = useState<boolean>(true);
   const theme = useTheme();
+  const { t } = useTranslation('common');
 
   const content = {
-    saturdayOption: 'Sobota 20 kwietnia',
-    sundayOption: 'Niedziela 21 kwietnia',
+    saturdayOption: t('agendaDay1'),
+    sundayOption: t('agendaDay2'),
   };
   const days = [
     {
