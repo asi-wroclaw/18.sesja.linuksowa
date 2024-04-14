@@ -22,6 +22,7 @@ import antmicro from '../assets/loga/logo_antmicro.svg';
 import plug from '../assets/loga/plug.png';
 import clug from '../assets/loga/CLUG.png';
 import ovh from '../assets/loga/OVHcloud_master_logo_fullcolor_RGB.png';
+import manus from '../assets/loga/logo-manus.png';
 
 type SponsorshipEntity = {
   title: string;
@@ -69,6 +70,11 @@ const Sponsorship = () => {
           href: 'https://programistamag.pl/',
           width: '300',
         },
+        {
+        image: manus,
+        href: 'https://manus.pl/',
+        width: '300',
+        }
        /* {
           image: linuxMagazine,
           href: 'https://linux-magazine.pl/',
