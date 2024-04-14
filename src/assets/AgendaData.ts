@@ -2,6 +2,11 @@ import { SpeechItem } from '@/slices/agenda/Speech';
 
 export const SATURDAY_AGENDA: SpeechItem[] = [
     {
+        start: '9:00',
+        end: '',
+        title: 'Registration',
+    },
+    {
     start: '9:45',
     end: '10:00',
     title: 'Opening Talk',
@@ -97,7 +102,12 @@ export const SATURDAY_AGENDA: SpeechItem[] = [
 ];
 
 export const SUNDAY_AGENDA: SpeechItem[] = [
-  {
+   {
+        start: '9:00',
+        end: '',
+        title: 'Registration',
+    },
+    { 
     start: '10:00',
     end: '10:50',
     title: 'Performance analysis and benchmarking on Linux',
