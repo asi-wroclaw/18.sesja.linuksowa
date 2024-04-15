@@ -24,6 +24,7 @@ export type OrganizerProps = {
 
 const Organizer = ({ image, name, role }: OrganizerProps) => {
   const theme = useTheme();
+  const { t } = useTranslation('common');
   return (
     <Flex zIndex="3">
       <Box margin="auto">
@@ -67,7 +68,7 @@ const Organizer = ({ image, name, role }: OrganizerProps) => {
             as="h3"
             color={theme.colors.primary}
           >
-            {role}
+            {t(role)}
           </Heading>
         </VStack>
       </Box>

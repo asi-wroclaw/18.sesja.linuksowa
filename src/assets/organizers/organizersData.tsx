@@ -1,6 +1,5 @@
 import blankAvatar from './blank-avatar.jpg';
 import { OrganizerProps } from '@/slices/Organizers';
-import { useTranslation } from 'next-export-i18n';
 import Michal from "./michal.png";
 import Tomek from "./rikardo.png";
 import Jakub from "./sylwek.png";
@@ -10,47 +9,48 @@ import Ola from "./ola.jpeg";
 import Wiktor from "./wiktor.png";
 import Przemek from "./przemek.jpg"
 
+
 export const ORGANIZERS: OrganizerProps[] = [
 
 
   {
     image: Michal,
     name: 'Michał Korczak',
-    role: 'Organizator Główny, Mistrz Ceremonii',
+    role: 'michal',
   },
   {
     image: Tomek,
     name: 'Tomasz Świątek',
-    role: "Organizator ds. Sponsorów",
+    role: 'tomek',
   },
   {
     image: Jakub,
     name: 'Jakub Śliwka',
-    role: "Organizator ds. Prelegentów",
+    role: 'jakub',
   },
   {
     image: Jacek,
     name: 'Jacek Poziemski',  
-    role: "Organizator ds. Prelegentów",
+    role: 'jacek',
   },
   {
     image: Ola,
     name: 'Aleksandra Mokrzan',  
-    role: "Organizatorka ds. Marketingu",
+    role: 'ola',
   },
   {
     image: Wiktor,
     name: 'Wiktor Rojecki',
-    role: "Organizator ds. Marketingu",
+    role: 'wiktor',
   },
   {
     image: Felix,
     name: 'Felix Zieliński',  
-    role: "Organizator ds. Strony",
+    role: 'felix',
   },
   {
     image: Przemek,
     name: 'Przemysław Jamontt',
-    role: "Organizator ds. Wolontariuszy",
+    role: 'przemek',
   },
 ];
