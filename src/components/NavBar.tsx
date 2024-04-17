@@ -40,7 +40,7 @@ const Live = () => {
   return (
     <Link
       isExternal
-      //href={'https://www.youtube.com/@pwrasi/streams'}
+      href={'https://youtube.com/live/ROq4e3jePTw'}
       target="_blank"
       margin="auto"
       _hover={{ textDecorationLine: 'none' }}
@@ -49,14 +49,13 @@ const Live = () => {
       left={{ base: `${172 + 20}px`, md: `${172 + 50}px`, lg: `${230 + 50}px` }}
     >
       <DefaultButton
-        //_hover={{ color: 'black' }}
+        _hover={{ color: 'black' }}
         size="md"
         text="LIVE"
-        //bg={theme.colors.red}
+        bg={theme.colors.red}
         paddingLeft={{ base: '12px', md: '24px' }}
         paddingRight={{ base: '12px', md: '24px' }}
-        //color="whiteAlpha.900"
-        bg = "gray"
+        color="whiteAlpha.900"
         type="submit"
       />
     </Link>
