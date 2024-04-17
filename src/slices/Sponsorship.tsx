@@ -23,6 +23,7 @@ import plug from '../assets/loga/plug.png';
 import clug from '../assets/loga/CLUG.png';
 import ovh from '../assets/loga/OVHcloud_master_logo_fullcolor_RGB.png';
 import manus from '../assets/loga/logo-manus.png';
+import slido from '../assets/loga/slido_logo_green.svg',
 
 type SponsorshipEntity = {
   title: string;
@@ -73,6 +74,11 @@ const Sponsorship = () => {
         {
         image: manus,
         href: 'https://manus.pl/',
+        width: '300',
+        },
+        {
+        image: slido,
+        href: 'https://www.slido.com',
         width: '300',
         }
        /* {
