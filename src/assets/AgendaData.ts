@@ -64,10 +64,10 @@ export const SATURDAY_AGENDA: SpeechItem[] = [
   {
     start: '14:00',
     end: '14:50',
-    title: 'Multimedia in Fedora: the Past, the Present and the Future',
+    title: 'Multimedia w Fedorze: przeszłość, teraźniejszość i przyszłość',
     author: 'Dominik Mierzejewski',
     lang: ['pl'],
-    description: ['Historically, Fedora has been the only top ten Linux distribution missing a significant chunk of multimedia software mostly due to FFmpeg being excluded from the distribution for legal reasons. With the introduction of a limited build of FFmpeg in February 2022, that changed. This talk will cover the history of multimedia software in Fedora and its current status. I will introduce the Multimedia Special Interest Group and talk about plans for the future.'],
+    description: ['Fedora jest historycznie jedyną z dziesięciu najpopularniejszych dystrybucji Linuksa, w której brakuje znaczącej części oprogramowania multimedialnego, głównie z uwagi na wykluczenie z dystrybucji pakietu FFmpeg z powodów prawnych. W lutym 2022, sytuacja uległa zmianie dzięki wprowadzeniu okrojonej wersji FFmpeg. Prezentacja obejmie historię oprogramowania multimedialnego w Fedorze oraz jego obecny status. Opowiem o Multimedia SIG oraz naszych planach na przyszłość.'],
     recording: '',
   },
   {
