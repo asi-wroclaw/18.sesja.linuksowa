@@ -59,7 +59,7 @@ export const SATURDAY_AGENDA: SpeechItem[] = [
   {
     start: "13:00",
     end: "14:00",
-    title: "Przerwa",
+    title: "Przerwa & Networking",
   },
   {
     start: '14:00',
@@ -137,7 +137,7 @@ export const SUNDAY_AGENDA: SpeechItem[] = [
   {
     start: "13:00",
     end: "14:00",
-    title: "Przerwa",
+    title: "Przerwa & Networking",
   },
   {
     start: '14:00',
