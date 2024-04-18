@@ -24,6 +24,7 @@ import clug from '../assets/loga/CLUG.png';
 import ovh from '../assets/loga/OVHcloud_master_logo_fullcolor_RGB.png';
 import manus from '../assets/loga/logo-manus.png';
 import slido from '../assets/loga/slido_logo_green.svg';
+import mikrus from '../assets/loga/logo-mikrus.png';
 
 type SponsorshipEntity = {
   title: string;
@@ -80,6 +81,11 @@ const Sponsorship = () => {
         image: slido,
         href: 'https://www.slido.com',
         width: '200',
+        },
+        {
+        image: mikrus,
+        href: 'https://mikr.us',
+        width: '400'
         }
        /* {
           image: linuxMagazine,
