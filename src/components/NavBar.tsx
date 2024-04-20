@@ -40,7 +40,7 @@ const Live = () => {
   return (
     <Link
       isExternal
-      href={'https://youtube.com/live/ROq4e3jePTw'}
+      href={'https://www.youtube.com/live/0GtdxGl5CUs'}
       target="_blank"
       margin="auto"
       _hover={{ textDecorationLine: 'none' }}
