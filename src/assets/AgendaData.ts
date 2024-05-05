@@ -166,6 +166,6 @@ export const SUNDAY_AGENDA: SpeechItem[] = [
     description: [
       'Chciałbyś poruszyć ważny dla Ciebie temat, lub przekazać myśl do społeczności Open Source? Przyjdź i zrób to!',
     ],
-    recording: '',
+    recording: 'https://www.youtube.com/watch?v=zKi010Oo28E&list=PLTvZBPQxCI8EWxk9lhgOP8wSg7572N5Up&index=14',
   },
 ];
