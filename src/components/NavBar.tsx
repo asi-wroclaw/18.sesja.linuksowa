@@ -124,7 +124,7 @@ const NavBar = () => {
           marginBottom="auto"
           cursor="pointer"
         >
-          <Live />
+        
           <Image
             onClick={() => scrollToSection(headId)}
             alt="sesja linuksowa"
