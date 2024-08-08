@@ -1,6 +1,6 @@
 import blankAvatar from './blank-avatar.jpg';
 import { OrganizerProps } from '@/slices/Organizers';
-import Michal from "./michal.png";
+import Michal from "./michal.jpg";
 import Tomek from "./rikardo.png";
 import Jakub from "./sylwek.png";
 import Jacek from "./jackek.png";
