@@ -4,6 +4,7 @@ import Michal from "./michal.jpg";
 import Tomek from "./rikardo.png";
 import Jakub from "./sylwek.png";
 import Jacek from "./jackek.png";
+import Kamil from "./kamil.jpg";
 import Felix from "./felix.png";
 import Ola from "./ola.jpeg";
 import Wiktor from "./wiktor.png";
@@ -32,6 +33,11 @@ export const ORGANIZERS: OrganizerProps[] = [
     image: Jacek,
     name: 'Jacek Poziemski',  
     role: 'jacek',
+  },
+  {
+    image: Kamil,
+    name: 'Kamil Tomasikiewicz',  
+    role: 'kamil',
   },
   {
     image: Ola,
