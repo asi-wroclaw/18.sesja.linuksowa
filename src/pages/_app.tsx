@@ -6,7 +6,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>19. Sesja Linuksowa</title>
+        <title>18. Sesja Linuksowa</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Provider forcedTheme="light">

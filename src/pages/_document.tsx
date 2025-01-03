@@ -4,11 +4,11 @@ export default function Home() {
   return (
     <Html suppressHydrationWarning>
       <Head>
-        <meta name="description" content="19. Sesja Linuksowa" />
-        <meta content="19. Sesja Linuksowa" property="og:site_name" />
+        <meta name="description" content="18. Sesja Linuksowa" />
+        <meta content="18. Sesja Linuksowa" property="og:site_name" />
         <meta content="pl_PL" property="og:locale" />
         <meta
-          content="19. Sesja Linuksowa | Wrocław, Polska"
+          content="18. Sesja Linuksowa | Wrocław, Polska"
           property="og:title"
         />
         <meta content="https://sesja.linuksowa.pl/" property="og:url" />

@@ -39,7 +39,7 @@ export const HeadDescription = () => {
         )}
         {config.SHOW_TICKETS && (
           <a
-            href="https://app.evenea.pl/event/19-sesja-linuksowa/?source=www-linuksowa"
+            href="https://app.evenea.pl/event/18-sesja-linuksowa/?source=www-linuksowa"
             target="_blank"
             rel="noreferrer noopener"
           >
