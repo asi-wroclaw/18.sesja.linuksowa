@@ -1,20 +1,23 @@
-import { z } from 'zod';
 import getConfig from 'next/config';
+import { z } from 'zod';
 
 const appConfig = z.object({
   SHOW_AGENDA: z.preprocess(
-    (value) => (value === 'true' ? true : false),
+    (value) => value === 'true',
+    z.boolean().default(false),
+  ),
+  SHOW_TICKETS: z.preprocess(
+    (value) => value === 'true',
     z.boolean().default(false),
   ),
   SHOW_SPEAKERS: z.preprocess(
-    (value) => (value === 'true' ? true : false),
+    (value) => value === 'true',
     z.boolean().default(false),
   ),
-  SEND_MESSAGE_URL: z.string().optional(),
   SHOW_CALL_FOR_PAPERS: z.preprocess(
-    (value) => (value === 'true' ? true : false),
-    z.boolean(),
-  )
+    (value) => value === 'true',
+    z.boolean().default(false),
+  ),
 });
 
 const config = appConfig.parse(getConfig().publicRuntimeConfig || {});
