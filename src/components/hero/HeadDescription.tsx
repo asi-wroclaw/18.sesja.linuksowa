@@ -28,7 +28,7 @@ export const HeadDescription = () => {
               size={'lg'}
               variant={'solid'}
               color={'white'}
-              bg="#429096"
+              bg="secondary"
               fontSize={'18px'}
               lineHeight="1.2"
               _hover={{ color: 'black' }}
