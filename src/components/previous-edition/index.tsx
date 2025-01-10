@@ -23,6 +23,7 @@ const PreviousEdition = () => {
       as="section"
       position="relative"
       zIndex="2"
+      marginBottom={'4em'}
       display="flex"
       width="100%"
       bg="white"
