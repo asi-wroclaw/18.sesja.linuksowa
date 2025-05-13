@@ -21,7 +21,7 @@ export const SPEAKERS: SpeakerProps[] = [
       linkedin: '',
       github: '',
     },
-    name: 'Krzysztof Biegański, Antmicro',
+    name: 'Krzysztof Biegański',
     description: [
       'Krzysztof is a Senior Software Engineer at Antmicro. In his everyday work, he mostly focuses on open source SystemVerilog tooling. He is one of the main contributors to Verilator, responsible for, among other things, extending the scheduler in Verilator to support timing constructs.',
     ],
@@ -34,7 +34,7 @@ export const SPEAKERS: SpeakerProps[] = [
       linkedin: '',
       github: '',
     },
-    name: 'Filip Dorosz, OVHcloud',
+    name: 'Filip Dorosz',
     description: [
       'DevOps Engineer with passion. My main interest lies in SRE and observability. I really do believe in Open Source software. While debugging performance issues I mainly listen to Synthwave music and Neue Deutsche Härte',
     ],
