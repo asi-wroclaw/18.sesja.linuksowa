@@ -7,7 +7,7 @@ import manus from '@/assets/logo/manus.png';
 import mikrus from '@/assets/logo/mikrus.png';
 import ovh from '@/assets/logo/ovhcloud.png';
 import plug from '@/assets/logo/plug.png';
-import programistamag from '@/assets/logo/programistamag.jpg';
+import programistamag from '@/assets/logo/programistamag.webp';
 import pwr from '@/assets/logo/pwr.png';
 import slido from '@/assets/logo/slido.svg';
 import type { SponsorshipEntity } from '@/components/sponsorship/types';
